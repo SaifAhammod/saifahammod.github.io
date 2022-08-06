@@ -13,11 +13,12 @@
   position: fixed;
   height: 100%;
   overflow: auto;
-  margin-top: 10px;
+
 }
 
 div.sidebarlogo{
-  margin-bottom: 30px;
+  margin-top: 40px;
+  margin-bottom: 20px;
 }
 
 /* Sidebar links */
@@ -71,19 +72,50 @@ div.content {
     float: none;
   }
 }
-img {
+
+* {box-sizing: border-box;}
+
+.container {
+  position: relative;
+  width: 50%;
+  max-width: 1500px;
+}
+
+.image {
   display: block;
-  margin-left:auto;
-  margin-right: auto;
+  width: 100%;
+  height: auto;
+}
 
-  margin-bottom: auto;
-  margin-top:auto;
+.overlay {
+  position: absolute; 
+  bottom: 0; 
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5); /* Black see-through */
+  color: #f1f1f1; 
+  width: 100%;
+  transition: .5s ease;
+  opacity:0;
+  color: white;
+  font-size: 20px;
+  padding: 20px;
+  text-align: center;
+}
 
+.container:hover .overlay {
+  opacity: 1;
+}
+
+div.firstimage{
+  margin-top: 40px;
 }
 p{
     font-size: large;
     /* font-family:cursive; */
-    line-height: 2;
+    
+}
+div.pstyle{
+  line-height: 2;
 }
 
 h1{
@@ -127,7 +159,7 @@ margin-bottom: 40px;
   transition-duration: 0.4s;
   cursor: pointer;
   border-radius: 2px;
-  margin-top: 60px;
+  margin-top: 40px;
   border-top-left-radius: 25px;
   border-bottom-right-radius: 25px;
 }
@@ -162,6 +194,7 @@ margin-bottom: 40px;
   </div>
     
     <a class="active" href="about.html">About</a>
+    <a href="education.html">Education</a>
     <a href="experience.html">Experience</a>
     <a href="expertise.html">Expertise</a>
     <a href="mywork.html">My Work</a>
@@ -172,58 +205,65 @@ margin-bottom: 40px;
   <!-- Page content -->
   <div  align="center" class="content">
     <div  style="width: 1000px;">
-        <img src="Images/AboutPic1.jpg" alt="Saif Ahammod" style="width:50%;">
-        <h1>
-            Md. Saif Ahammod Khan
-        </h1>
-        <h3 align="center">Birthdate: 15 December, 1998</h3>
+      <div class="container">
+        
+      <div class="firstimage"><img src="Images/AboutPic1.jpg" alt="Saif Ahammod" style="width:100%;"></div>
+
+        <div class="overlay">MD. SAIF AHAMMOD KHAN</div>
+      </div>
+   
         <h2 align="left">
             About Me:
         </h2>
-        <p align="Justify">
-             I am an engineer in computer science. 
-            Artificial intelligence and development of android apps is my area of expertise. 
-            In addition, I have knowledge of robotics, graphics design, flutter app development, 
-            and internet of things . During my leisure time, I like to play  FIFA, GTA V, and 
-            Valorant. I enjoy doing Photography. I also enjoy watching web series and fiction 
-            movies. Football is one of my favorite sports to play and watch. 
-        </p>
-    </div>
-    <div  style="width: 1000px;">
-        <h2 align="left">
-            Education:
-        </h2>
-        <ul>
-            
-            <li><h3 align="left">
-                BSC IN COMPUTER SCIENCE AND ENGINEERING, NORTH SOUTH UNIVERSITY
-            </h3></li>
-            
-            <h4 align="left">SPECIALIZED TRAIL: ARTIFICIAL INTELLIGENCE </h4>
-        <h4 align="left">THESIS: UNDERSTANDING THE HEALTHCARE SECTOR IN BANGLADESH: EXPERIENCE AND SERVICES DURING THE COVID-19 PANDEMIC</h4>
-        <h4 align="left">CGPA: 3.70 out of 4.00 (90-92% marks)</h4>
-        <h5 align="left">30 December 2021</h5>
-        <li><h3 align="left">
-            HIGHER SECONDARY SCHOOL CERTIFICATE, RAJSHAHI EDUCATION BOARD MODEL SCHOOL AND COLLEGE
-        </h3></li>
-       
-        <h4 align="left">Group: science </h4>
-        <h5 align="left">APRIL 2016</h5>
-    
+        <div class="pstyle">
+          <p align="Justify">
+            I am a <b> computer science engineer</b>. 
+           My area of expertise is <b>artificial intelligence</b> and <b> apps development</b> . 
+           In addition, I have knowledge of <b>robotics, graphics design, flutter app development, 
+           internet of things</b> and so on. In my leisure time, I like to play  FIFA, GTA V, and 
+           Valorant. I enjoy doing Photography, watching web series and fiction 
+           movies. Football is one of my favorite sports to play and watch. 
+       </p>
+        </div>
 
-    <li><h3 align="left">
-        SECONDARY SCHOOL CERTIFICATE, RAJSHAHI COLLEGIATE SCHOOL AND COLLEGE, RAJSHAHI
-    </h3></li>
-    
-    <h4 align="left">Group: science </h4>
-    <h5 align="left">FEBRUARY 2014</h5>
-    </ul>
+        <ul>
+        
+          <li>
+            <p align="Justify">
+              <b>Birthdate:</b> 15 December, 1998
+         </p>
+          </li>
+          
+          
+      <li>
+        <p align="Justify">
+          <b>Career Interest:</b>  Lecturer, Data Scientist or Software Engineer 
+     </p>
+
+  </li>
+ 
+  <li>
+
+    <p align="Justify">
+      <b>Research Interest:</b> HCI, AI & Robotics
+    </p>
+
+  </li>
+  <li>
+
+    <p align="Justify">
+      <b>Available for Job:</b> Yes
+    </p>
+  </li>     
+  </ul>
+
+
+        
     </div>
+
     
   </div>
-  <div class="footer">
-    <p>©Copyright  2022 - Saif Ahammod Khan.</p>
-  </div>
+  
 </body>
 
 </html> 
