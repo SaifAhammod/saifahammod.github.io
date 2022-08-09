@@ -112,7 +112,7 @@
 
     h3 {
       /* font-family:cursive; */
-      line-height: .8;
+      line-height: 1.2;
 
     }
 
@@ -125,8 +125,7 @@
 
     h5 {
       /* font-family:cursive; */
-      text-indent: 20px;
-      margin-bottom: 40px;
+      margin-top: 40px;
     }
 
     .button {
@@ -158,6 +157,44 @@
 
     }
 
+    .container {
+  display: flex;
+  width: 100%;
+  padding: 4% 2%;
+  box-sizing: border-box;
+  height: 50vh;
+}
+
+.box {
+  flex: 1;
+  overflow: hidden;
+  transition: .5s;
+  margin: 0 2%;
+  box-shadow: 0 20px 30px rgba(0,0,0,.1);
+  line-height: 0;
+}
+
+.box > img {
+  width: 200%;
+  height: calc(100% - 10vh);
+  object-fit: cover; 
+  transition: .5s;
+}
+
+.box > span {
+  font-size: 2vh;
+  display: block;
+  text-align: center;
+  height: 10vh;
+  line-height: 1.5;
+}
+
+.box:hover { flex: 1 1 50%; }
+.box:hover > img {
+  width: 100%;
+  height: 100%;
+}
+
   </style>
 </head>
 
@@ -180,39 +217,91 @@
 
   <div align="center" class="content">
     <div style="width: 1000px;">
-  <!-- Page content -->
-  <div class="firstimage">
-      <img src="Images/education.png" alt="Education" width="300" height="300">
-  </div>
-        
+      <!-- Page content -->
+      <div class="firstimage">
+        <img src="Images/PagePic/education.png" alt="Education" width="300" height="300">
+      </div>
+
       <h2 align="left">
         Education:
-    </h2>
-    <ul>
-        <li><h3 align="left">
-            BSC IN COMPUTER SCIENCE AND ENGINEERING, NORTH SOUTH UNIVERSITY
-        </h3></li>
+      </h2>
+      <ul>
+        <li>
+          <h5 align="left">30 December 2021</h5>
+          
+        </li>
+        <h3 align="left">
+          BSC IN COMPUTER SCIENCE AND ENGINEERING, NORTH SOUTH UNIVERSITY
+        </h3>
         <h4 align="left">SPECIALIZED TRAIL: ARTIFICIAL INTELLIGENCE </h4>
-    <h4 align="left">THESIS: UNDERSTANDING THE HEALTHCARE SECTOR IN BANGLADESH: EXPERIENCE AND SERVICES DURING THE COVID-19 PANDEMIC</h4>
-    <h4 align="left">CGPA: 3.70 out of 4.00 (90-92% marks)</h4>
-    <h5 align="left">30 December 2021</h5>
-    <li><h3 align="left">
-        HIGHER SECONDARY SCHOOL CERTIFICATE, RAJSHAHI EDUCATION BOARD MODEL SCHOOL AND COLLEGE
-    </h3></li>
-   
-    <h4 align="left">Group: science </h4>
-    <h5 align="left">APRIL 2016</h5>
+        <h4 align="left">THESIS: UNDERSTANDING THE HEALTHCARE SECTOR IN BANGLADESH: EXPERIENCE AND SERVICES DURING THE
+          COVID-19 PANDEMIC</h4>
+        <h4 align="left">CGPA: 3.70 out of 4.00 (90-92% marks)</h4>
+        
+        <li>
+          <h5 align="left">APRIL 2016</h5>        
+        </li>
 
-<li><h3 align="left">
-    SECONDARY SCHOOL CERTIFICATE, RAJSHAHI COLLEGIATE SCHOOL AND COLLEGE, RAJSHAHI
-</h3></li>
+          <h3 align="left">
+            HIGHER SECONDARY SCHOOL CERTIFICATE, RAJSHAHI EDUCATION BOARD MODEL SCHOOL AND COLLEGE
+          </h3>
+        <h4 align="left">Group: science </h4>
+        
+        <li>
+          <h5 align="left">FEBRUARY 2014</h5>
+        </li>
+        <h3 align="left">
+          SECONDARY SCHOOL CERTIFICATE, RAJSHAHI COLLEGIATE SCHOOL AND COLLEGE, RAJSHAHI
+        </h3>
+        <h4 align="left">Group: science </h4>
+        
+      </ul>
+      <h2 align="left">
+        Training:
+      </h2>
+      <ul>
+        <li>
+          <h3 align="left">
+            Robotics Workshop of Summer 2018 - Organized by NSU ACM Student Chapter
+          </h3>
+        </li>
+        <li>
+          <h3 align="left">
+            Android Workshop of Summer 2018 - Organized by NSU ACM Student Chapter
+          </h3>
+        </li>
+        <li>
+          <h3 align="left">
+            Workshop on Linus and Unix Operating System - Organized by NSU ACM Student Chapter
+          </h3>
+        </li>
 
-<h4 align="left">Group: science </h4>
-<h5 align="left">FEBRUARY 2014</h5>
-</ul>
+        <li>
+          <h3 align="left">
+            Drone Making Workshop- Organized by Research and Development (R&D) Section, NSU CEC and Conducted by Rotor Solution and Thrust
+          </h3>
+        </li>
+      </ul>
+      <h2 align="left">
+        Achievement:
+      </h2>
+      <div class="container">
+        <div class="box">
+          <img src="Images/achivements/Robotics Worckshop.jpg">
+          <span>Robotics workshop - 2nd runners up </span>
+        </div>
+        <div class="box">
+          <img src="Images/achivements/RoboQuest Robo Soccer Runners Up.jpg">
+          <span>RoboQuest Robosoccer - Runners Up</span>
+        </div>
+        <div class="box">
+          <img src="Images/achivements/WooshWithoutWheel - 2nd Runners Up.jpg">
+          <span>Woosh Without Wheel - 2nd Runners Up</span>
+        </div>
 
+      </div>
 
-  <!-- Page content ends here -->
+      <!-- Page content ends here -->
     </div>
   </div>
 </body>
