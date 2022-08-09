@@ -1,10 +1,195 @@
 <!DOCTYPE html>
 <html>
+
+<head>
+  <title>Education</title>
+  <link rel="icon" type="image/x-icon" href="Images/Logo.png">
+
+  <style>
+    body {
+      background-color: #f1f1f1;
+    }
+
+    .sidebar {
+      margin: 0;
+      padding: 0;
+      width: 250px;
+      background-color: #ffffff;
+      position: fixed;
+      height: 100%;
+      overflow: auto;
+
+    }
+
+    div.sidebarlogo {
+      margin-top: 40px;
+      margin-bottom: 20px;
+    }
+
+    /* Sidebar links */
+    .sidebar a {
+      display: block;
+      color: black;
+      padding: 16px;
+      text-decoration: none;
+      font-family: sans-serif;
+    }
+
+    /* Active/current link */
+    .sidebar a.active {
+
+      color: black;
+      font-size: large;
+      font-family: sans-serif;
+      font-weight: bold;
+
+    }
+
+    /* Links on mouse-over */
+    .sidebar a:hover:not(.active) {
+      font-size: larger;
+      color: rgb(0, 0, 0);
+      letter-spacing: 2px;
+    }
+
+    /* Page content. The value of the margin-left property should match the value of the sidebar's width property */
+    div.content {
+      margin-left: 250px;
+      padding: 1px 16px;
+      height: auto;
+    }
+
+    /* On screens that are less than 700px wide, make the sidebar into a topbar */
+    @media screen and (max-width: 700px) {
+      .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+      }
+
+      .sidebar a {
+        float: left;
+      }
+
+      div.content {
+        margin-left: 0;
+      }
+    }
+
+    /* On screens that are less than 400px, display the bar vertically, instead of horizontally */
+    @media screen and (max-width: 400px) {
+      .sidebar a {
+        text-align: center;
+        float: none;
+      }
+    }
+
+
+
+    div.firstimage {
+      margin-top: 40px;
+      margin-bottom: 40px;
+    }
+
+    p {
+      font-size: large;
+      /* font-family:cursive; */
+
+    }
+
+    div.pstyle {
+      line-height: 2;
+    }
+
+    h1 {}
+
+    h2 {
+
+      /* font-family:cursive; */
+      line-height: 1;
+      margin-top: 60px;
+    }
+
+    h3 {
+      /* font-family:cursive; */
+      line-height: 1.2;
+
+    }
+
+    h4 {
+      /* font-family:cursive; */
+      line-height: .5;
+      text-indent: 20px;
+
+    }
+
+    h5 {
+      /* font-family:cursive; */
+      margin-top: 40px;
+    }
+
+    .button {
+      border: none;
+      color: white;
+
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 4px 2px;
+      transition-duration: 0.4s;
+      cursor: pointer;
+      border-radius: 2px;
+      margin-top: 40px;
+      border-top-left-radius: 25px;
+      border-bottom-right-radius: 25px;
+    }
+
+    .button1 {
+      background-color: white;
+      color: black;
+      border: 2px solid black;
+    }
+
+    .button1:hover {
+      background-color: white;
+      color: white;
+
+    }
+
+
+
+  </style>
+</head>
+
 <body>
-<div align="center">
-    <img src="Images/Comingsoon.gif" alt="Coming Soon" width="600" height="600">
-</div>
+  <!-- The sidebar -->
 
+  <div align="center" class="sidebar">
+    <div align="center" class="sidebarlogo">
+      <a href="https://saifahammod.me"><img src="Images/logo.png" alt="Saif Ahammod" style="width:70%;"></a>
+    </div>
 
+    <a href="about.html">About</a>
+    <a href="education.html">Education</a>
+    <a class="active" href="experience.html">Experience</a>
+    <a href="expertise.html">Expertise</a>
+    <a href="mywork.html">My Work</a>
+    <a href="contact.html">Contact</a>
+    <button class="button button1"><a href="Doc/cv.pdf">Download CV</a></button>
+  </div>
+
+  <div align="center" class="content">
+    <div style="width: 1000px;">
+      <!-- Page content -->
+      <div class="firstimage">
+        <img src="Images/Comingsoon.gif" alt="Coming Soon" width="600" height="600">
+      </div>
+      
+
+      <!-- Page content ends here -->
+    </div>
+  </div>
 </body>
+
 </html>
