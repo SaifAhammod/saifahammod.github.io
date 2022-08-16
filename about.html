@@ -85,7 +85,7 @@
     }
 
     * {
-      box-sizing: border-box;
+      /* box-sizing: border-box; */
     }
 
     .container {
@@ -199,6 +199,43 @@
       color: black;
       text-align: center;
     }
+
+    #mySidenav a {
+      position: absolute;
+      right: -120px;
+      transition: 0.3s;
+      padding: 15px;
+      width: 120px;
+      text-decoration: none;
+      font-size: 20px;
+      color: white;
+      border-radius: 5px 0 0 5px;
+      text-align: right;
+    }
+
+    #mySidenav a:hover {
+      right: 0;
+    }
+
+    #gallery {
+      top: 60px;
+      background-color: #04AA6D;
+    }
+
+    #blog {
+      top: 120px;
+      background-color: #2196F3;
+    }
+
+    #projects {
+      top: 180px;
+      background-color: #f44336;
+    }
+
+    #contact {
+      top: 240px;
+      background-color: #555
+    }
   </style>
 </head>
 
@@ -209,7 +246,6 @@
     <div align="center" class="sidebarlogo">
       <a href="https://saifahammod.me"><img src="Images/logo.png" alt="Saif Ahammod" style="width:70%;"></a>
     </div>
-
     <a class="active" href="about.html">About</a>
     <a href="education.html">Education</a>
     <a href="experience.html">Experience</a>
@@ -221,6 +257,12 @@
 
   <!-- Page content -->
   <div align="center" class="content">
+    ​<div id="mySidenav" class="sidenav">
+      <a href="#" id="gallery">Gallery</a>
+      <a href="#" id="blog">Blog</a>
+      <a href="#" id="projects">Photography</a>
+      <a href="#" id="contact">Design</a>
+    </div>
     <div style="width: 1000px;">
       <div class="container">
 
@@ -237,7 +279,7 @@
           I am a <b> computer science engineer</b>.
           My area of expertise is <b>artificial intelligence</b> and <b>android app development</b> .
           In addition, I have knowledge of <b>robotics, graphics design, flutter app development,
-          internet of things</b> and so on. In my leisure time, I like to play FIFA, GTA V, and
+            internet of things</b> and so on. In my leisure time, I like to play FIFA, GTA V, and
           Valorant. I enjoy doing Photography, watching web series and fiction
           movies. Football is one of my favorite sports to play and watch.
         </p>
