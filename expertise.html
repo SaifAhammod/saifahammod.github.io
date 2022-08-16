@@ -158,6 +158,42 @@
     }
 
 
+    #mySidenav a {
+      position: absolute;
+      right: -120px;
+      transition: 0.3s;
+      padding: 15px;
+      width: 120px;
+      text-decoration: none;
+      font-size: 20px;
+      color: white;
+      border-radius: 5px 0 0 5px;
+      text-align: right;
+    } 
+
+    #mySidenav a:hover {
+      right: 0;
+    }
+
+    #gallery {
+      top: 60px;
+      background-color: #04AA6D;
+    }
+
+    #blog {
+      top: 120px;
+      background-color: #2196F3;
+    }
+
+    #projects {
+      top: 180px;
+      background-color: #f44336;
+    }
+
+    #contact {
+      top: 240px;
+      background-color: #555
+    }
 
   </style>
 </head>
@@ -167,6 +203,7 @@
 
   <div align="center" class="sidebar">
     <div align="center" class="sidebarlogo">
+
       <a href="https://saifahammod.me"><img src="Images/logo.png" alt="Saif Ahammod" style="width:70%;"></a>
     </div>
 
@@ -180,6 +217,12 @@
   </div>
 
   <div align="center" class="content">
+    ​<div id="mySidenav" class="sidenav">
+      <a href="hobbies/gallery.html" id="gallery">Gallery</a>
+      <a href="hobbies/blog.html" id="blog">Blog</a>
+      <a href="hobbies/photography.html" id="projects">Photography</a>
+      <a href="hobbies/design.html" id="contact">Design</a>
+    </div>
     <div style="width: 1000px;">
       <!-- Page content -->
       <div class="firstimage">
