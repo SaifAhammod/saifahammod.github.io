@@ -7,7 +7,7 @@
 }
 ::selection{
   color: #fff;
-  background: #007bff;
+  background: #000000;
 }
 body{
   padding: 10px;
@@ -31,15 +31,15 @@ body{
   font-size: 18px;
   font-weight: 500;
   cursor: pointer;
-  color: #007bff;
+  color: #000000;
   border-radius: 50px;
-  border: 2px solid #007bff;
+  border: 2px solid #000000;
   transition: all 0.3s ease;
 }
 .items span.active,
 .items span:hover{
   color: #fff;
-  background: #007bff;
+  background: #000000;
 }
 
 .gallery{
