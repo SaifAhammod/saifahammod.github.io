@@ -125,8 +125,7 @@ body {
     width: 100%;
   }
   div.pagebackground{
-    margin-left: 40px;
-    margin-right:40px;
+    width: 1000px;
   }
 
   p {
