@@ -5,45 +5,52 @@
   <title>Contact</title>
   <link rel="icon" type="image/x-icon" href="Images/Logo.png">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
   <style>
-.con{
-    display:flex;
-    gap:10px
-}
-.icon{
-    position:relative;
-    color:#00C896;
-    width:40px;
-    height:40px;
-    font-size:25px;
-    text-align:center;
-    margin:1rem;
-    cursor:pointer;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.icon::after, .icon::before{
-    content:" ";
-    position:absolute;
-    top:50%;
-    left:50%;
-    transform:translate(-50%,-50%);
-    width:100%;
-    height:100%;
-    border:1px solid #000000;
-    opacity:0;
-    transition: 0.3s; 
-}
-.icon:hover::after{
-    opacity:1;
-    transform:translate(-50%, -50%) scale(1.2) rotate(25deg);
-    
-}
-.icon:hover::before{
-    opacity:1;
-    transform:translate(-50%, -50%) scale(1.2) rotate(45deg);
-}
+    .con {
+      display: flex;
+      gap: 10px
+    }
+
+    .icon {
+      position: relative;
+      color: #00C896;
+      width: 40px;
+      height: 40px;
+      font-size: 25px;
+      text-align: center;
+      margin: 1rem;
+      cursor: pointer;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .icon::after,
+    .icon::before {
+      content: " ";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 100%;
+      height: 100%;
+      border: 1px solid #000000;
+      opacity: 0;
+      transition: 0.3s;
+    }
+
+    .icon:hover::after {
+      opacity: 1;
+      transform: translate(-50%, -50%) scale(1.2) rotate(25deg);
+
+    }
+
+    .icon:hover::before {
+      opacity: 1;
+      transform: translate(-50%, -50%) scale(1.2) rotate(45deg);
+
+    }
   </style>
 </head>
 
@@ -59,7 +66,7 @@
     <a href="education.html">Education</a>
     <a href="experience.html">Experience</a>
     <a href="expertise.html">Expertise</a>
-    <a  href="mywork.html">My Work</a>
+    <a href="mywork.html">My Work</a>
     <a class="active" href="contact.html">Contact</a>
     <button class="button button1"><a href="Doc/cv.pdf">Download CV</a></button>
   </div>
@@ -76,26 +83,30 @@
       <div class="firstimage">
         <img src="Images/PagePic/contact.png" alt="Education" width="200" height="200">
       </div>
+      <br><br>
+      <div class="con" align="center">
+        <a href="https://www.facebook.com/S41FKHAN">
+          <div class="icon">
+            <img src="Images/Contact Icon/facebook.png" alt="Education" width="40" height="40">
+          </div>
+        </a>
+        <a href="https://twitter.com/S4IF_KHAN">
+          <div class="icon">
+            <img src="Images/Contact Icon/twitter.png" alt="Education" width="40" height="40">
+          </div>
+        </a>
+        <a href="https://www.linkedin.com/in/md-saif-ahammod-khan-04/">
+          <div class="icon">
+            <img src="Images/Contact Icon/linkedin.png" alt="Education" width="40" height="40">
+          </div>
+        </a>
+        <a href="https://www.instagram.com/s41f_khan">
+          <div class="icon">
+            <img src="Images/Contact Icon/instagram.png" alt="Education" width="40" height="40">
+          </div>
+        </a>
+      </div>
 
-      <h2 align="left">
-        Contact:
-      </h2>
-      <div class="con">
-        <div class="icon">
-
-          <a href="https://www.facebook.com/S41FKHAN"><img src="Images/Contact Icon/facebook.png" alt="Education" width="40" height="40"></a>
-        </div>
-        <div class="icon">
-          <img src="Images/Contact Icon/twitter.png" alt="Education" width="40" height="40">
-        </div>
-        <div class="icon">
-          <img src="Images/Contact Icon/linkedin.png" alt="Education" width="40" height="40">
-        </div>
-        <div class="icon">
-          <img src="Images/Contact Icon/instagram.png" alt="Education" width="40" height="40">
-        </div>
-    </div>
-      
 
       <!-- Page content ends here -->
     </div>
