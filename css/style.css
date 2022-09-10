@@ -138,26 +138,6 @@ body {
     line-height: 2;
   }
 
-  h1 {
-
-  }
-
-  h2 {
-
-  }
-
-  h3 {
-
-  }
-
-  h4 {
-
-  }
-
-  h5 {
-
-  }
-
   .button {
     border: none;
     color: white;
@@ -198,7 +178,7 @@ body {
     color: white;
     border-radius: 5px 0 0 5px;
     text-align: right;
-    background-color: #555;
+    background-color: rgb(0, 0, 0);
   } 
 
   #mySidenav a:hover {
