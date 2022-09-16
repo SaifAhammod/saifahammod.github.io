@@ -6,7 +6,67 @@
   <link rel="icon" type="image/x-icon" href="Images/Logo.png">
   <link rel="stylesheet" href="css/style.css">
   <style>
+    .cards-list {
+      width: 1000px;
+      display: flex;
+    }
 
+    .card {
+
+      margin: 30px auto;
+      width: 100px;
+      height: 100px;
+      border-radius: 10px;
+      box-shadow: 2px 2px 15px 3px rgba(0, 0, 0, 0.12), -2px -2px 15px 3px rgba(0, 0, 0, 0.11);
+      transition: 0.4s;
+    }
+
+    .card .card_image {
+      width: inherit;
+      height: inherit;
+      border-radius: 10px;
+    }
+
+    .card .card_image img {
+      filter: grayscale(100%);
+      width: inherit;
+      height: inherit;
+      border-radius: 10px;
+      object-fit: cover;
+    }
+
+    .card .card_title {
+      text-align: center;
+      border-radius: 0px 0px 40px 40px;
+      font-family: sans-serif;
+      font-weight: bold;
+      font-size: 15px;
+      margin-top: -5px;
+
+    }
+
+    .card:hover {
+
+      transform: scale(0.9, 0.9);
+      box-shadow: 2px 2px 15px 7px rgba(0, 0, 0, 0.12),
+        -2px -2px 15px 7px rgba(0, 0, 0, 0.11);
+    }
+
+    .card .card_image img:hover {
+      filter: grayscale(0%);
+    }
+
+
+    .title-black {
+      color: black;
+    }
+
+    @media all and (max-width: 500px) {
+      .card-list {
+        /* On small screens, we are no longer using row direction but column */
+        flex-direction: column;
+      }
+    }
   </style>
 </head>
 
@@ -49,34 +109,309 @@
         <li>
           <p align="left"><b>Programming language : </b> Java, Python, C, C++, SQL </p>
         </li>
-        
+        <div class="cards-list">
+
+          <div class="card 3">
+            <div class="card_image">
+              <img src="https://media.giphy.com/media/10SvWCbt1ytWCc/giphy.gif" />
+            </div>
+            <div class="card_title">
+              <p>Card Title</p>
+            </div>
+          </div>
+          <div class="card 3">
+            <div class="card_image">
+              <img src="https://media.giphy.com/media/10SvWCbt1ytWCc/giphy.gif" />
+            </div>
+            <div class="card_title">
+              <p>Card Title</p>
+            </div>
+          </div>
+          <div class="card 3">
+            <div class="card_image">
+              <img src="https://media.giphy.com/media/10SvWCbt1ytWCc/giphy.gif" />
+            </div>
+            <div class="card_title">
+              <p>Card Title</p>
+            </div>
+          </div>
+          <div class="card 3">
+            <div class="card_image">
+              <img src="https://media.giphy.com/media/10SvWCbt1ytWCc/giphy.gif" />
+            </div>
+            <div class="card_title">
+              <p>Card Title</p>
+            </div>
+          </div>
+          <div class="card 3">
+            <div class="card_image">
+              <img src="https://media.giphy.com/media/10SvWCbt1ytWCc/giphy.gif" />
+            </div>
+            <div class="card_title">
+              <p>Card Title</p>
+            </div>
+          </div>
+
+
+        </div>
+
         <li>
           <p align="left"><b>Markup language:</b> HTML, XML, CSS </p>
         </li>
+        <div class="cards-list">
+
+          <div class="card 3">
+            <div class="card_image">
+              <img src="https://media.giphy.com/media/10SvWCbt1ytWCc/giphy.gif" />
+            </div>
+            <div class="card_title">
+              <p>Card Title</p>
+            </div>
+          </div>
+          <div class="card 3">
+            <div class="card_image">
+              <img src="https://media.giphy.com/media/10SvWCbt1ytWCc/giphy.gif" />
+            </div>
+            <div class="card_title">
+              <p>Card Title</p>
+            </div>
+          </div>
+          <div class="card 3">
+            <div class="card_image">
+              <img src="https://media.giphy.com/media/10SvWCbt1ytWCc/giphy.gif" />
+            </div>
+            <div class="card_title">
+              <p>Card Title</p>
+            </div>
+          </div>
+        </div>
         <li>
           <p align="left"><b>Database tool:</b> Firebase, MySQL</p>
         </li>
+        <div class="cards-list">
+
+          <div class="card 3">
+            <div class="card_image">
+              <img src="https://media.giphy.com/media/10SvWCbt1ytWCc/giphy.gif" />
+            </div>
+            <div class="card_title">
+              <p>Card Title</p>
+            </div>
+          </div>
+          <div class="card 3">
+            <div class="card_image">
+              <img src="https://media.giphy.com/media/10SvWCbt1ytWCc/giphy.gif" />
+            </div>
+            <div class="card_title">
+              <p>Card Title</p>
+            </div>
+          </div>
+          
+        </div>
         <li>
           <p align="left"><b>Version control tool:</b> Git</p>
         </li>
+        <div class="cards-list">
+
+          <div class="card 3">
+            <div class="card_image">
+              <img src="https://media.giphy.com/media/10SvWCbt1ytWCc/giphy.gif" />
+            </div>
+            <div class="card_title">
+              <p>Card Title</p>
+            </div>
+          </div>
+
+        </div>
         <li>
           <p align="left"><b>Data science tools:</b> Anaconda</p>
         </li>
+        <div class="cards-list">
+
+        
+          <div class="card 3">
+            <div class="card_image">
+              <img src="https://media.giphy.com/media/10SvWCbt1ytWCc/giphy.gif" />
+            </div>
+            <div class="card_title">
+              <p>Card Title</p>
+            </div>
+          </div>
+        </div>
         <li>
           <p align="left"><b>Libraries:</b> Scikit-Learn, Pandas, Keras</p>
         </li>
+        <div class="cards-list">
+
+          <div class="card 3">
+            <div class="card_image">
+              <img src="https://media.giphy.com/media/10SvWCbt1ytWCc/giphy.gif" />
+            </div>
+            <div class="card_title">
+              <p>Card Title</p>
+            </div>
+          </div>
+          <div class="card 3">
+            <div class="card_image">
+              <img src="https://media.giphy.com/media/10SvWCbt1ytWCc/giphy.gif" />
+            </div>
+            <div class="card_title">
+              <p>Card Title</p>
+            </div>
+          </div>
+          <div class="card 3">
+            <div class="card_image">
+              <img src="https://media.giphy.com/media/10SvWCbt1ytWCc/giphy.gif" />
+            </div>
+            <div class="card_title">
+              <p>Card Title</p>
+            </div>
+          </div>
+        </div>
         <li>
           <p align="left"><b>Platform:</b> Android, Arduino, Raspberry Pi</p>
         </li>
+        <div class="cards-list">
+
+          <div class="card 3">
+            <div class="card_image">
+              <img src="https://media.giphy.com/media/10SvWCbt1ytWCc/giphy.gif" />
+            </div>
+            <div class="card_title">
+              <p>Card Title</p>
+            </div>
+          </div>
+          <div class="card 3">
+            <div class="card_image">
+              <img src="https://media.giphy.com/media/10SvWCbt1ytWCc/giphy.gif" />
+            </div>
+            <div class="card_title">
+              <p>Card Title</p>
+            </div>
+          </div>
+          <div class="card 3">
+            <div class="card_image">
+              <img src="https://media.giphy.com/media/10SvWCbt1ytWCc/giphy.gif" />
+            </div>
+            <div class="card_title">
+              <p>Card Title</p>
+            </div>
+          </div>
+        </div>
         <li>
           <p align="left"><b>Operating system:</b> Windows, Linux, Raspbian, Android </p>
         </li>
+        <div class="cards-list">
+
+          <div class="card 3">
+            <div class="card_image">
+              <img src="https://media.giphy.com/media/10SvWCbt1ytWCc/giphy.gif" />
+            </div>
+            <div class="card_title">
+              <p>Card Title</p>
+            </div>
+          </div>
+          <div class="card 3">
+            <div class="card_image">
+              <img src="https://media.giphy.com/media/10SvWCbt1ytWCc/giphy.gif" />
+            </div>
+            <div class="card_title">
+              <p>Card Title</p>
+            </div>
+          </div>
+          <div class="card 3">
+            <div class="card_image">
+              <img src="https://media.giphy.com/media/10SvWCbt1ytWCc/giphy.gif" />
+            </div>
+            <div class="card_title">
+              <p>Card Title</p>
+            </div>
+          </div>
+          <div class="card 3">
+            <div class="card_image">
+              <img src="https://media.giphy.com/media/10SvWCbt1ytWCc/giphy.gif" />
+            </div>
+            <div class="card_title">
+              <p>Card Title</p>
+            </div>
+          </div>
+        </div>
         <li>
           <p align="left"><b>Electronic design:</b>Fritzing, Proteus, Logisim </p>
         </li>
+        <div class="cards-list">
+
+          <div class="card 3">
+            <div class="card_image">
+              <img src="https://media.giphy.com/media/10SvWCbt1ytWCc/giphy.gif" />
+            </div>
+            <div class="card_title">
+              <p>Card Title</p>
+            </div>
+          </div>
+          <div class="card 3">
+            <div class="card_image">
+              <img src="https://media.giphy.com/media/10SvWCbt1ytWCc/giphy.gif" />
+            </div>
+            <div class="card_title">
+              <p>Card Title</p>
+            </div>
+          </div>
+          <div class="card 3">
+            <div class="card_image">
+              <img src="https://media.giphy.com/media/10SvWCbt1ytWCc/giphy.gif" />
+            </div>
+            <div class="card_title">
+              <p>Card Title</p>
+            </div>
+          </div>
+        </div>
         <li>
           <p align="left"><b>Editing tool:</b>Sketch Up, Adobe (Photoshop, Illustrator, Premier Pro), Figma </p>
         </li>
+        <div class="cards-list">
+
+          <div class="card 3">
+            <div class="card_image">
+              <img src="https://media.giphy.com/media/10SvWCbt1ytWCc/giphy.gif" />
+            </div>
+            <div class="card_title">
+              <p>Card Title</p>
+            </div>
+          </div>
+          <div class="card 3">
+            <div class="card_image">
+              <img src="https://media.giphy.com/media/10SvWCbt1ytWCc/giphy.gif" />
+            </div>
+            <div class="card_title">
+              <p>Card Title</p>
+            </div>
+          </div>
+          <div class="card 3">
+            <div class="card_image">
+              <img src="https://media.giphy.com/media/10SvWCbt1ytWCc/giphy.gif" />
+            </div>
+            <div class="card_title">
+              <p>Card Title</p>
+            </div>
+          </div>
+          <div class="card 3">
+            <div class="card_image">
+              <img src="https://media.giphy.com/media/10SvWCbt1ytWCc/giphy.gif" />
+            </div>
+            <div class="card_title">
+              <p>Card Title</p>
+            </div>
+          </div>
+          <div class="card 3">
+            <div class="card_image">
+              <img src="https://media.giphy.com/media/10SvWCbt1ytWCc/giphy.gif" />
+            </div>
+            <div class="card_title">
+              <p>Card Title</p>
+            </div>
+          </div>
+        </div>
       </ul>
       <h2 align="left">
         Soft Skill:
@@ -94,9 +429,7 @@
         <li>
           <p align="left"><b>Agile | </b>I can work in agile environment</p>
         </li>
-
       </ul>
-
 
       <!-- Page content ends here -->
     </div>
