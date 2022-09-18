@@ -68,6 +68,76 @@
         flex-direction: column;
       }
     }
+    body .csoftskill {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+body .csoftskill .card {
+  position: relative;
+  min-width: 200px;
+  height: 300px;
+  box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.2),
+    inset -5px -5px 15px rgba(255, 255, 255, 0.1),
+    5px 5px 15px rgba(0, 0, 0, 0.3), -5px -5px 15px rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  margin: 10px;
+  transition: 0.5s;
+}
+
+
+body .csoftskill .card .box {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  right: 5px;
+  bottom: 5px;
+  background: #2a2b2f;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  transition: 0.5s;
+}
+
+body .csoftskill .card .box:hover {
+  transform: translateY(-50px);
+}
+
+body .csoftskill .card .box:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.03);
+}
+
+body .csoftskill .card .box .contentss {
+  text-align: center;
+}
+
+
+body .csoftskill .card .box .contentss h3 {
+  font-size: 1.3rem;
+  color: #fff;
+  z-index: 1;
+  transition: 0.5s;
+  margin-bottom: 20px;
+}
+
+body .csoftskill .card .box .contentss p {
+  color: rgba(255, 255, 255, 0.9);
+  transition: 0.5s;
+  line-height: normal;
+  text-align: center;
+  margin: 10px;
+}
+
   </style>
 </head>
 
@@ -414,25 +484,51 @@
             </div>
           </div>
         </div>
-
+        <br><br><br><br>
       <h2 align="left">
         Soft Skill:
       </h2>
-      <ul>
-        <li>
-          <p align="left"><b>Organized | </b>I prefer always a organized work</p>
-        </li>
-        <li>
-          <p align="left"><b>Leadership | </b>I am confident and motivated to lead a team.</p>
-        </li>
-        <li>
-          <p align="left"><b>Group Member | </b>I can work as a group member</p>
-        </li>
-        <li>
-          <p align="left"><b>Agile | </b>I can work in agile environment</p>
-        </li>
-      </ul>
-
+      <div class="csoftskill">
+        <div class="card">
+          <div class="box">
+            <div class="contentss">
+              <h3>Organized</h3>
+              <p>I prefer always a organized work.</p>
+            </div>
+          </div>
+        </div>
+      
+        <div class="card">
+          <div class="box">
+            <div class="contentss">
+              <h3>Leadership</h3>
+              <p>I am confident and motivated to lead a team.</p>
+      
+            </div>
+          </div>
+        </div>
+      
+        <div class="card">
+          <div class="box">
+            <div class="contentss">
+              <h3>Communicating</h3>
+              <p>I work effectively in teams and have excellent communication skills. </p>
+      
+            </div>
+          </div>
+        </div>
+        
+          <div class="card">
+          <div class="box">
+            <div class="contentss">
+  
+              <h3>Agile</h3>
+              <p>I can work in agile environment</p>
+      
+            </div>
+          </div>
+        </div>
+      </div>
       <!-- Page content ends here -->
     </div>
   </div>
