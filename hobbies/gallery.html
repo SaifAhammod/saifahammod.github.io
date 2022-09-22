@@ -12,15 +12,16 @@
 }
 
 body {
-  background: #141926;
+  background: #f1f1f1;
   font-family: Helvetica, Arial, sans-serif; 
 }
 
 .outer {
   position: relative;
-  margin: auto;
+  
   width: 70px;
-  margin-top: 200px;
+  margin-top: 40px;
+  margin-left: 40px;
   cursor: pointer;
 }
 
@@ -44,7 +45,7 @@ label {
   content: '';
   height: 1px;
   width: inherit;
-  background: #FFC107;
+  background: #000;
   left: 0;
   transition: all .3s ease-in;
 }
@@ -75,6 +76,28 @@ label {
 .outer:hover .inner:after {
   bottom: 0;
 }
+a:link {
+  text-decoration: none;
+  color: #000;
+  font-size: 1em; 
+  line-height: 4em;
+  text-transform: uppercase;
+  transition: all .3s ease-in;
+  cursor: pointer;
+}
+
+a:visited {
+  text-decoration: none;
+  color: #000;
+  font-size: 1em; 
+  line-height: 4em;
+  text-transform: uppercase;
+
+  transition: all .3s ease-in;
+  opacity: 0;
+  cursor: pointer;
+}
+
 
     </style>
 </head>
@@ -82,8 +105,7 @@ label {
   <div class="outer">
     <div class="inner">
       <label>
-        <a href="#" onclick="history.go(-1)">Back</a>
-
+        <a href="#" onclick="history.go(-1)"> Back</a>
       </label>
     </div>
   </div>
