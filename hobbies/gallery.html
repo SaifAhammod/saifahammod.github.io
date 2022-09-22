@@ -5,92 +5,88 @@
     <title>Gallery</title>
     <link rel="icon" type="image/x-icon" href="../Images/Logo.png">
     <style>
-  @import url(https://fonts.googleapis.com/css?family=Roboto:400,300,500);
-body {
-  font: 100% Roboto, sans-serif;
-  background-size: cover;
-  padding: 50px;
+* {
+  padding: 0;
   margin: 0;
+  box-sizing: border-box;
 }
 
-nav {
-  width: 300px;
-  background: black;
-  color: rgba(255, 255, 255, 0.87);
-  -webkit-clip-path: circle(24px at 30px 24px);
-  clip-path: circle(24px at 32px 24px);
-  -webkit-transition: -webkit-clip-path 0.5625s, clip-path 0.375s;
-  transition: -webkit-clip-path 0.5625s, clip-path 0.375s;
+body {
+  background: #141926;
+  font-family: Helvetica, Arial, sans-serif; 
 }
 
-nav:hover {
-  -webkit-transition-timing-function: ease-out;
-  transition-timing-function: ease-out;
-  -webkit-transition-duration: 0.75s;
-  transition-duration: 0.75s;
-  -webkit-clip-path: circle(390px at 225px 24px);
-  clip-path: circle(390px at 150px 24px);
-}
-
-a {
-  display: block;
-  line-height: 50px;
-  padding: 0 20px;
-  color: inherit;
-  cursor: pointer;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-}
-
-a:hover { background: #1f1f1f; }
-
-a:active { background: #ffca28; }
-
-.navicon {
-  padding: 23px 20px;
-  cursor: pointer;
-  -webkit-transform-origin: 32px 24px;
-  -ms-transform-origin: 32px 24px;
-  transform-origin: 32px 24px;
-}
-
-.navicon div {
+.outer {
   position: relative;
-  width: 20px;
-  height: 2px;
-  background: rgba(255, 255, 255, 0.87);
+  margin: auto;
+  width: 70px;
+  margin-top: 200px;
+  cursor: pointer;
 }
 
-.navicon div:before,
-.navicon div:after {
-  display: block;
-  content: "";
-  width: 20px;
-  height: 2px;
-  background: rgba(255, 255, 255, 0.87);
+.inner {
+  width: inherit;
+  text-align: center;
+}
+
+label { 
+  font-size: .8em; 
+  line-height: 4em;
+  text-transform: uppercase;
+  color: #fff;
+  transition: all .3s ease-in;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.inner:before, .inner:after {
   position: absolute;
+  content: '';
+  height: 1px;
+  width: inherit;
+  background: #FFC107;
+  left: 0;
+  transition: all .3s ease-in;
 }
 
-.navicon div:before { top: -7px; }
+.inner:before {
+  top: 50%; 
+  transform: rotate(45deg);  
+}
 
-.navicon div:after { top: 7px; }
+.inner:after {  
+  bottom: 50%;
+  transform: rotate(-45deg);  
+}
+
+.outer:hover label {
+  opacity: 1;
+}
+
+.outer:hover .inner:before,
+.outer:hover .inner:after {
+  transform: rotate(0);
+}
+
+.outer:hover .inner:before {
+  top: 0;
+}
+
+.outer:hover .inner:after {
+  bottom: 0;
+}
 
     </style>
 </head>
 <body>
-    <nav>
-        <div class="navicon">
-          <div></div>
-        </div>
-      
-        <a>Home</a>
-        <a>Photography</a>
-        <a>Design</a>
-        <a>Blog</a>
-        <a>Back</a>
-      
-      </nav>
+  <div class="outer">
+    <div class="inner">
+      <label>
+        <a href="#" onclick="history.go(-1)">Back</a>
+
+      </label>
+    </div>
+  </div>
+
 </body>
 </html>
