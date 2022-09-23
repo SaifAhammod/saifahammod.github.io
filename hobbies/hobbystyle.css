@@ -26,6 +26,7 @@
   
   label { 
     font-size: .8em; 
+    font-weight: bold;
     line-height: 4em;
     text-transform: uppercase;
     color: #fff;
@@ -37,7 +38,7 @@
   .inner:before, .inner:after {
     position: absolute;
     content: '';
-    height: 1px;
+    height: 2px;
     width: inherit;
     background: #000;
     left: 0;
