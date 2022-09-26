@@ -173,7 +173,7 @@ body {
   #mySidenav a {
     position: absolute;
     right: -140px;
-    width: 160px;
+    width: 200px;
     transition: 0.3s;
     padding: 15px;
     text-decoration: none;
@@ -196,17 +196,17 @@ body {
 
   }
 
-  #blog {
+  #photography {
     top: 220px;
 
   }
 
-  #projects {
+  #design {
     top: 280px;
 
   }
 
-  #contact {
+  #video {
     top: 340px;
   
   }
