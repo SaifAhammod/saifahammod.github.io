@@ -12,13 +12,13 @@
 .containerpc{
     width: 1000px;
     position: relative;
-    display: flex;
-    justify-content: space-between;
+    display:flex;
 }
 
 .containerpc .card{
     position: relative;
     cursor: pointer;
+    margin-right: 20px;
 }
 
 .containerpc .card .face{
@@ -38,7 +38,7 @@
 }
 
 .containerpc .card:hover .face.face1{
-    background: #0c016b;
+    background: #00c5ff;
     transform: translateY(0);
 }
 
@@ -60,14 +60,14 @@
     padding: 0;
     color: #fff;
     text-align: center;
-    font-size: 1.5em;
+    font-size: 1em;
 }
 
 .containerpc .card .face.face2{
     position: relative;
     background: #fff;
     display: flex;
-    justify-content: center;
+    justify-content: left;
     align-items: center;
     padding: 20px;
     box-sizing: border-box;
@@ -98,7 +98,25 @@
     background: #333;
     color: #fff;
 }
+
+.contentprojectcard a{
+  text-decoration: none;
+  padding: 2px 5px;
+  border: 1px solid #000000;
+  font-family: consolas;
+
+}
+
+.contentprojectcard a:visited {
+      color: #000000;
+}
 </style>
+
+<!-- ..........................................................................................BODY.............................................................................. -->
+
+
+
+
 <body>
   <!-- The sidebar -->
 
@@ -171,19 +189,57 @@
         Projects:
       </h2>
       <h3 align="left">
-        Artificial Intelligence:
+        Artificial Intelligence
       </h3>
-      <ul>
-        <li>
-          <p align="left">ASSIST:</p>
-        </li>
-        <li>
-          <p align="left">House Rent Prediction of Dhaka City:</p>
-        </li>
-      </ul>
+      <div class="containerpc">
+        <div class="card">
+            <div class="face face1">
+                <div class="contentprojectcard">
+                    <img src="Images/HomeProPic1.png">
+                    <h3>ASSIST</h3>
+                </div>
+            </div>
+            <div class="face face2">
+                <div class="contentprojectcard">
+                    <p>Coming Soon</p>
+                        <a href="#">Read More</a>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+          <div class="face face1">
+              <div class="contentprojectcard">
+                  <img src="Images/HomeProPic1.png">
+                  <h3>House Rent Prediction of Dhaka City</h3>
+              </div>
+          </div>
+          <div class="face face2">
+              <div class="contentprojectcard">
+                  <p>Coming Soon</p>
+                      <a href="#">Read More</a>
+              </div>
+          </div>
+      </div>
+    </div>
       <h3 align="left">
-        Human Computing Interaction:
+        Human Computing Interaction
       </h3>
+      <div class="containerpc">
+        <div class="card">
+            <div class="face face1">
+                <div class="contentprojectcard">
+                    <img src="Images/HomeProPic1.png">
+                    <h3>Shouhardo</h3>
+                </div>
+            </div>
+            <div class="face face2">
+                <div class="contentprojectcard">
+                    <p>Coming Soon</p>
+                        <a href="#">Read More</a>
+                </div>
+            </div>
+        </div>
+    </div>
       <ul>
         <li>
           <p align="left">Shouhardo:</p>
