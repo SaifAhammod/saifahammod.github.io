@@ -6,7 +6,25 @@ body {
     box-sizing: border-box;
     font-family:Arial, Helvetica, sans-serif;
   }
-
+  a:link {
+    color: green;
+    background-color: transparent;
+    text-decoration: none;
+  }
+  a:visited {
+    color: #00087c;
+    background-color: transparent;
+    text-decoration-style: double;
+  }
+  a:hover {
+    color: red;
+    background-color: transparent;
+  }
+  a:active {
+    color: yellow;
+    background-color: transparent;
+    text-decoration: underline;
+  }
   .sidebar {
     margin: 0;
     padding: 0;
