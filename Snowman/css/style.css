@@ -4355,7 +4355,7 @@ ul {
 
 /* line 165, ../../01 cl html template/03_jun 2019/186_Gaiming_html/sass/_footer.scss */
 .footer_part .footer_icon li a :hover {
-  color: #ff0000;
+  color: #0818A8;
 }
 
 @media (max-width: 576px) {
@@ -4373,7 +4373,7 @@ ul {
 
 /* line 188, ../../01 cl html template/03_jun 2019/186_Gaiming_html/sass/_footer.scss */
 .footer_part .copyright_text span {
-  color: #ff0000;
+  color: #0818A8;
   font-size: 12px;
 }
 
@@ -4386,19 +4386,19 @@ ul {
 
 /* line 200, ../../01 cl html template/03_jun 2019/186_Gaiming_html/sass/_footer.scss */
 .footer_part .copyright_text p a {
-  color: #ff0000;
+  color: #0818A8;
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }
 
 /* line 204, ../../01 cl html template/03_jun 2019/186_Gaiming_html/sass/_footer.scss */
 .footer_part .copyright_text p a:hover {
-  color: #ff0000;
+  color: #0818A8;
 }
 
 /* line 209, ../../01 cl html template/03_jun 2019/186_Gaiming_html/sass/_footer.scss */
 .footer_part .info {
-  color: red !important;
+  color: #0818A8 !important;
 }
 
 @media (max-width: 991px) {
@@ -4433,7 +4433,7 @@ sup,
 sub,
 u,
 del {
-  color: #ff0000;
+  color: #0818A8;
 }
 
 /* line 93, ../../01 cl html template/03_jun 2019/186_Gaiming_html/sass/_elements.scss */
@@ -6441,7 +6441,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /* line 165, ../../01 cl html template/03_jun 2019/186_Gaiming_html/sass/_footer.scss */
 .footer_part .footer_icon li a :hover {
-  color: #ff0000;
+  color: #0818A8;
 }
 
 @media (max-width: 576px) {
