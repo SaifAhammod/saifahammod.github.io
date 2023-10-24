@@ -1,0 +1,21 @@
+.acard {
+  background-image: linear-gradient(to bottom right, #000000, #262A56);;
+  width: 100px;
+  border: 1px solid #E3CCAE;
+  margin: 10px;
+  padding: 10px;
+  text-align: center;
+  display: inline-block;
+  border-radius: 10px;
+}
+
+.acard img {
+  max-width: 100%;
+  border: 1px solid #B8621B;
+  border-radius: 5px;
+}
+
+.acard-title {
+  margin: 5px 0;
+  color: #5272F2;
+}
