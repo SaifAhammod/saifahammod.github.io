@@ -4152,6 +4152,11 @@ ul {
 
 /**********************footer part css*******************/
 /* line 3, ../../01 cl html template/03_jun 2019/186_Gaiming_html/sass/_footer.scss */
+.clan_footer{
+  /* background: #000 ; */
+  background: url("../img/body_bg.png") center no-repeat;
+
+}
 .footer_part .footer_top {
   padding: 140px 0 100px;
 }
