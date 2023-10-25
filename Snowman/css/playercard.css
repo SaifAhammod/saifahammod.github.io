@@ -19,7 +19,12 @@
   margin: 5px 0;
   color: #5272F2;
 }
-.acard-titlex {
+.acard-titlesmaller {
+  margin: 5px 0;
+  color: #5272F2;
+  font-size:smaller;
+}
+.acard-titlexsmall {
   font-size: x-small;
   margin: 5px 0;
   color: #5272F2;
