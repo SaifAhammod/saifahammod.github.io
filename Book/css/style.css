@@ -6167,6 +6167,12 @@ h1, h2, h3, h4, h5, h6 {
   background-repeat: no-repeat;
   background-size: cover;
 }
+.bookbg {
+  background-image: url("../img/BookImage/bookbg.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 .setupbg {
   background-image: url("../img/SETUP IMAGE/setupwallpaper.png");
   background-position: center;
