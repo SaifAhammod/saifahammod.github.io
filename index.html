@@ -25,15 +25,12 @@
     }
 
     .blur {
-      /*    background-color: #212121; */
       background-image: url("Images/Homebackground.png");
       background-repeat: no-repeat;
       background-size: cover;
       background-position: center;
       filter: blur(5px);
       transform: scale(1.2);
-      /*     animation: bg 8s linear infinite alternate; */
-
     }
 
     .main {
@@ -42,6 +39,7 @@
       align-items: center;
       position: absolute;
       z-index: 100;
+      text-align: center;
     }
 
     .title {
@@ -58,7 +56,6 @@
 
     .particles {
       position: absolute;
-      /* z-index: 200; */
       overflow: hidden;
     }
 
@@ -97,11 +94,10 @@
 
     img {
       display: block;
-      margin-top: 40px;
-      margin-bottom: 100px;
+      margin: 40px auto 100px;
       padding: 3px;
-
-
+      max-width: 100%;
+      height: auto;
     }
 
     h1 {
@@ -109,18 +105,13 @@
       font-size: 50px;
       font-family: sans-serif;
       -webkit-text-fill-color: rgb(255, 255, 255);
-      /* Will override color (regardless of order) */
       letter-spacing: .4em;
     }
 
     h3 {
-
       color: #ffffff;
       font-size: 30px;
     }
-
-
-
 
     .button {
       border: none;
@@ -147,55 +138,72 @@
       font-family: sans-serif;
       color: #ffffff;
       border: 1px solid #ffffff;
-
       letter-spacing: .2em;
     }
 
     .button1:hover {
-      height: 70px;
-      width: 200px;
       color: rgb(0, 0, 0);
       background-color: #ffffff;
       border: 1px solid #ffffff;
       font-size: large;
-
     }
 
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 30px;
+        letter-spacing: .2em;
+      }
+
+      .button1 {
+        height: 50px;
+        width: 150px;
+        font-size: 14px;
+        padding: 10px;
+      }
+
+      .button1:hover {
+        height: 50px;
+        width: 150px;
+        font-size: 14px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      h1 {
+        font-size: 24px;
+        letter-spacing: .1em;
+      }
+
+      .button1 {
+        height: 40px;
+        width: 120px;
+        font-size: 12px;
+        padding: 5px;
+      }
+
+      .button1:hover {
+        height: 40px;
+        width: 120px;
+        font-size: 12px;
+      }
+    }
   </style>
 </head>
 
 <body>
-
-
-
   <div class="blur"></div>
   <div class="main" id="main">
     <div align="center">
-
-      <img src="Images/logo.png" alt="Saif Ahammod" style="width:40%;">
+      <img src="Images/logo.png" alt="Saif Ahammod" style="width:20%;">
       <h1>
-        SAIF AHAMMOD KHAN
+        MD SAIF AHAMMOD KHAN
         <br><br>
       </h1>
-          <a href="about.html"><button class="button button1">PORTFOLIO</button></a>
-
+      <a href="about.html"><button class="button button1">PORTFOLIO</button></a>
       <br>
-      
     </div>
-    
   </div>
-  <div class="particles" id="particles">
-
-  </div>
-
-
-
-
-
-
-
-
-
+  <div class="particles" id="particles"></div>
 
   <script>
     var particles = document.getElementById("particles");
@@ -224,10 +232,9 @@
         particles.appendChild(div);
       }
     }
+
     window.addEventListener("resize", main);
     window.addEventListener("load", main);
-
-
   </script>
 </body>
 
