@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Gallery</title>
+    <link rel="icon" type="image/x-icon" href="../Images/Logo.png">
+    <link rel="stylesheet" href="hobbystyle.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <style>
+
+
+
+    </style>
+</head>
+<body>
+  <div class="outer">
+    <div class="inner">
+      <label>
+        <a href="#" onclick="history.go(-1)"> Back</a>
+      </label>
+    </div>
+  </div>
+  <h1 align="center">Saif's Gallery</h1>
+  <br><br>
+
+  <div class="gallery" id="gallery">
+      <div class="gallery-item">
+          <div class="content"><img src="../Images/gallery/1.jpg" alt=""></div>
+      </div>
+      <div class="gallery-item">
+        <div class="content"><img src="../Images/gallery/2.jpg" alt=""></div>
+      </div>
+      <div class="gallery-item">
+        <div class="content"><img src="../Images/gallery/3.jpg" alt=""></div>
+      </div>
+      <div class="gallery-item">
+        <div class="content"><img src="../Images/gallery/4.jpg" alt=""></div>
+      </div>
+      <div class="gallery-item">
+        <div class="content"><img src="../Images/gallery/5.jpg" alt=""></div>
+      </div>
+      <div class="gallery-item">
+        <div class="content"><img src="../Images/gallery/6.jpg" alt=""></div>
+      </div>
+      <div class="gallery-item">
+        <div class="content"><img src="../Images/gallery/7.jpg" alt=""></div>
+      </div>
+      <div class="gallery-item">
+        <div class="content"><img src="../Images/gallery/8.jpg" alt=""></div>
+      </div>
+      <div class="gallery-item">
+        <div class="content"><img src="../Images/gallery/9.jpg" alt=""></div>
+      </div>
+      <div class="gallery-item">
+        <div class="content"><img src="../Images/gallery/10.jpg" alt=""></div>
+      </div>
+      <div class="gallery-item">
+        <div class="content"><img src="../Images/gallery/11.jpg" alt=""></div>
+      </div>
+      <div class="gallery-item">
+        <div class="content"><img src="../Images/gallery/12.jpg" alt=""></div>
+      </div>
+      <div class="gallery-item">
+        <div class="content"><img src="../Images/gallery/13.jpg" alt=""></div>
+      </div>
+      <div class="gallery-item">
+        <div class="content"><img src="../Images/gallery/14.jpg" alt=""></div>
+      </div>
+      <div class="gallery-item">
+        <div class="content"><img src="../Images/gallery/15.jpg" alt=""></div>
+      </div>
+      <div class="gallery-item">
+        <div class="content"><img src="../Images/gallery/16.jpg" alt=""></div>
+      </div>
+      <div class="gallery-item">
+        <div class="content"><img src="../Images/gallery/17.jpg" alt=""></div>
+      </div>
+      <div class="gallery-item">
+        <div class="content"><img src="../Images/gallery/18.jpg" alt=""></div>
+      </div>
+      <div class="gallery-item">
+        <div class="content"><img src="../Images/gallery/19.jpg" alt=""></div>
+      </div>
+      <div class="gallery-item">
+        <div class="content"><img src="../Images/gallery/20.jpg" alt=""></div>
+      </div>
+      <div class="gallery-item">
+        <div class="content"><img src="../Images/gallery/21.jpg" alt=""></div>
+      </div>
+      <div class="gallery-item">
+        <div class="content"><img src="../Images/gallery/22.jpg" alt=""></div>
+      </div>
+      <div class="gallery-item">
+        <div class="content"><img src="../Images/gallery/23.jpg" alt=""></div>
+      </div>
+      <div class="gallery-item">
+        <div class="content"><img src="../Images/gallery/24.jpg" alt=""></div>
+      </div>
+      <div class="gallery-item">
+        <div class="content"><img src="../Images/gallery/25.jpg" alt=""></div>
+      </div>
+  </div>
+  
+   <script>
+    var gallery = document.querySelector('#gallery');
+var getVal = function (elem, style) { return parseInt(window.getComputedStyle(elem).getPropertyValue(style)); };
+var getHeight = function (item) { return item.querySelector('.content').getBoundingClientRect().height; };
+var resizeAll = function () {
+    var altura = getVal(gallery, 'grid-auto-rows');
+    var gap = getVal(gallery, 'grid-row-gap');
+    gallery.querySelectorAll('.gallery-item').forEach(function (item) {
+        var el = item;
+        el.style.gridRowEnd = "span " + Math.ceil((getHeight(item) + gap) / (altura + gap));
+    });
+};
+gallery.querySelectorAll('img').forEach(function (item) {
+    item.classList.add('byebye');
+    if (item.complete) {
+        console.log(item.src);
+    }
+    else {
+        item.addEventListener('load', function () {
+            var altura = getVal(gallery, 'grid-auto-rows');
+            var gap = getVal(gallery, 'grid-row-gap');
+            var gitem = item.parentElement.parentElement;
+            gitem.style.gridRowEnd = "span " + Math.ceil((getHeight(gitem) + gap) / (altura + gap));
+            item.classList.remove('byebye');
+        });
+    }
+});
+window.addEventListener('resize', resizeAll);
+gallery.querySelectorAll('.gallery-item').forEach(function (item) {
+    item.addEventListener('click', function () {        
+        item.classList.toggle('full');        
+    });
+});
+
+   </script>
+</body>
+</html>

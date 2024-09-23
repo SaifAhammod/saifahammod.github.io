@@ -1,191 +1,468 @@
 <!DOCTYPE html>
 <html>
-
 <head>
-  <title>About Saif</title>
-  <link rel="icon" type="image/x-icon" href="Images/Logo.png">
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+<title>About</title>
+<link rel="icon" type="image/x-icon" href="assets/img/logo.png">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+    img {
+  border: 5px solid #00b3ff;
+}
+body {
+  background-color: #1B1A55;
+  font-family: "Raleway", sans-serif;
+  color:#E1F7F5
+}
+b{
+    color: #ffffff;
+}
+h1{
+    font-family: "Raleway", sans-serif; color:#00b3ff
+}
 
+p,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif; color:#E1F7F5;
+
+}
+
+/* Timeline */
+/* The actual timeline (the vertical ruler) */
+.timeline {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline::after {
+  content: '';
+  position: absolute;
+  width: 6px;
+  background-color: #E1F7F5;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -3px;
+}
+
+/* Container around content */
+.container {
+  padding: 10px 40px;
+  position: relative;
+  background-color: inherit;
+  width: 50%;
+}
+
+/* The circles on the timeline */
+.container::after {
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  right: -17px;
+  background-color: #E1F7F5;
+  border: 4px solid #00b3ff;
+  top: 15px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+/* Place the container to the left */
+.left {
+  left: 0;
+}
+
+/* Place the container to the right */
+.right {
+  left: 50%;
+}
+
+/* Add arrows to the left container (pointing right) */
+.left::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  right: 30px;
+  border: medium solid white;
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent white;
+}
+
+/* Add arrows to the right container (pointing left) */
+.right::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  left: 30px;
+  border: medium solid white;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent white transparent transparent;
+}
+
+/* Fix the circle for containers on the right side */
+.right::after {
+  left: -16px;
+}
+
+/* The actual content */
+.content {
+  padding: 20px 30px;
+  background-color: #070F2B;
+  position: relative;
+  border-radius: 6px;
+}
+
+/* Media queries - Responsive timeline on screens less than 600px wide */
+@media screen and (max-width: 600px) {
+  /* Place the timelime to the left */
+  .timeline::after {
+  left: 31px;
+  }
+  
+  /* Full-width containers */
+  .container {
+  width: 100%;
+  padding-left: 70px;
+  padding-right: 25px;
+  }
+  
+  /* Make sure that all arrows are pointing leftwards */
+  .container::before {
+  left: 60px;
+  border: medium solid white;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent white transparent transparent;
+  }
+
+  /* Make sure all circles are at the same spot */
+  .left::after, .right::after {
+  left: 15px;
+  }
+  
+  /* Make all right containers behave like the left ones */
+  .right {
+  left: 0%;
+  }
+}
+
+/* ------------------------------------------------------------------------------------------------------------- */
+/* Gallery Starts Here */
+div.gallery {
+  border: 1px solid #ccc;
+}
+
+div.gallery:hover {
+  border: 1px solid #00b3ff;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 24.99999%;
+}
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+</style>
 </head>
+<body class="w3-content" style="max-width:1600px">
 
-<body>
-  <!-- The sidebar -->
-
-  <div align="center" class="sidebar">
-    <div align="center" class="sidebarlogo">
-      <a href="https://saifahammod.me"><img src="Images/logo.png" alt="Saif Ahammod" style="width:70%;"></a>
-    </div>
-    <a class="active" href="about.html">About</a>
-    <a href="education.html">Education</a>
-    <a href="experience.html">Experience</a>
-    <a href="expertise.html">Expertise</a>
-    <a href="publication.html">Publications</a>
-    <a href="project.html">Projects</a>
-    <a href="referance.html">Referances</a>
-    <a href="contact.html">Contact</a>
-
-    <button class="button button1"><a href="Doc/cv.pdf">Resume</a></button>
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-collapse w3-animate-left" style="z-index:3;width:300px; background-color: #070F2B;" id="mySidebar"><br>
+  <div class="w3-container">
+    <a href="#" onclick="w3_close()" class="w3-hide-large w3-right w3-jumbo w3-padding w3-hover-grey" title="close menu">
+      <i class="fa fa-remove"></i>
+    </a>
+    <img src="/assets/img/dp.png" style="width:60% ;" class="w3-round" ><br><br>
+    <h3>Saif Ahammod Khan</h3>
+    <p class="w3-text-light-grey">Graduate Teaching Assistant</p>
   </div>
+  <div class="w3-bar-block">
+    <a href="/about.html" onclick="w3_close()" class="w3-bar-item w3-button w3-padding" style="color: #00b3ff;"><i class="fa fa-user fa-fw w3-margin-right"></i>ABOUT</a> 
+    <a href="/research.html" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-lightbulb-o fa-fw w3-margin-right"></i>RESEARCH</a> 
+    <a href="/experience.html" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-suitcase fa-fw w3-margin-right"></i>EXPERIENCE</a> 
+    <a href="/experties.html" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-laptop fa-fw w3-margin-right"></i>EXPERTIES</a>  
+    <a href="/contact.html" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-map-marker fa-fw w3-margin-right"></i>CONTACT</a>
+    <a href="/gallery.html" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-camera fa-fw w3-margin-right"></i>GALLERY</a>
+    <a href="/assets/doc/cv.pdf" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-paperclip fa-fw w3-margin-right"></i>RESUME</a>
+  </div>
+  <div class="w3-panel w3-large" style="color: #00b3ff;">
+    <!-- <a href="Codatron.com"><i class="fa fa-suitcase w3-hover-opacity"></i></a> -->
+    <a href="https://www.facebook.com/SaifAhammod04/"><i class="fa fa-facebook-official w3-hover-opacity"></i></a>
+    <!-- <a href=""><i class="fa fa-youtube w3-hover-opacity"></i></a> -->
 
-  <!-- Page content -->
-  <div align="center" class="content">
-    ​<div id="mySidenav" class="sidenav">
-      <a href="hobbies/gallery.html" id="gallery">Gallery</a>
-      <a href="hobbies/photography.html" id="photography">Photography</a>
-      <a href="hobbies/design.html" id="design">Design</a>
-      <a href="hobbies/videos.html" id="video">Video</a>
+    <a href="https://github.com/saif-ahammod"><i class="fa fa-github w3-hover-opacity"></i></a>
+    <a href="https://www.linkedin.com/in/saif-ahammod/"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
+  </div>
+</nav>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:300px">
+
+  <!-- Header -->
+  <header id="portfolio">
+    <a href="#"><img src="/assets/img/logo.png" style="width:65px;  border: 0px solid #00b3ff" class="w3-circle w3-right w3-margin w3-hide-large w3-hover-opacity"></a>
+    <span class="w3-button w3-hide-large w3-xxlarge w3-hover-text-grey" onclick="w3_open()"><i class="fa fa-bars"></i></span>
+    <div class="w3-container">
+    <h1>ABOUT</h1>
     </div>
-    <div class="pagebackground">
-      <div class="containeraboutpic">
-        <div class="firstimage"> 
-          <img src="Images/AboutPic1.jpg" alt="Saif Ahammod" style="width:100%;">
-        </div>
-        <div class="overlay">MD. SAIF AHAMMOD KHAN</div>
-      </div>
-      <p >
-        <b>Researcher on Artificial Intelligence & Robotics</b>
-      </p>
-      <h2 align="left">
-        About Saif:
-      </h2>
-      <div class="pstyle">
-        <p align="Justify">
-          Saif Ahammod Khan is a researcher in the fields of Robotics 
-          and Artificial Intelligence. He holds a remarkable academic record, 
-          having graduated with Magna Cum Laude honors from North South University (NSU), 
-          where he earned a Bachelor's degree in Computer Science and Engineering (CSE). 
-          As a current MS student at NSU, Saif is embracing the opportunity to delve deeper 
-          into the complexities of Robotics and AI. He is actively engaged in various research 
-          projects, collaborating with renowned faculty members and fellow students to address 
-          real-world challenges in these fields.
-        </p>
-      </div>
-      <h2 align="left">
-        Current Job:
-      </h2>
-      <div class="pstyle">
-      
-            <p align="Justify">
-              Research assistant & part time graduate assistant at North South University
-            </p>
-        
-      </div>
-      <h2 align="left">
-        Career interest:
-      </h2>
-      <div class="pstyle">
-        <ul>
-          <li>
-            <p align="Justify">
-              Teching
-            </p>
-          </li>
-          <li>
-            <p align="Justify">
-              Researching
-            </p>
-          </li>
-        </ul>
-      </div>
+  </header>
+ 
 
-      <h2 align="left">
-        Research Interest:
-      </h2>
-      <div class="pstyle">
-        <ul>
-          <li>
-            <p align="Justify">
-              Artificial intelligence & robotics
-            </p>
-          </li>
-        </ul>
+  <div class="w3-container w3-padding-large" style="margin-bottom:32px">
+    <hr>
+    <h3>About Me</h3>
+    <hr>
+    <div style="text-align: justify;">
+        <p >I was born on December 15, 1998, in the vibrant city of Rajshahi, Bangladesh. 
+            While my roots are in Rajshahi, I currently live in Dhaka, where I am pursuing 
+            my academic and professional goals with dedication and passion.</p>
+        <p >I hold a <b>Bachelor of Science in Computer Science and Engineering</b>, which I completed 
+            with the distinction of <b>"Magna Cum Laude."</b> This achievement reflects my commitment to 
+            academic excellence. Currently, I am pursuing a <b>Master of Science in Computer Science 
+            and Engineering at North South University</b>, where I continue to enhance my knowledge and 
+            skills in my field of study. In addition to my academic pursuits, I work as a <b>Graduate 
+            Teaching Assistant</b>, where I assist in the learning and development of undergraduate students.</p>
+        <p >My career aspirations are deeply rooted in both <b>researching and teaching</b>. I have a strong research 
+            interest in the areas of <b>Artificial Intelligence and Robotics</b>, which I believe hold immense 
+            potential for shaping the future of technology. Previously, I have had the opportunity to 
+            conduct research on <b>Human-Computer Interaction as well as Artificial Intelligence and Robotics</b>, 
+            which has strengthened my understanding and passion for these domains. My aim is to contribute 
+            to advancements in these fields and share my knowledge through teaching and mentorship.</p>
+        <p >Beyond academics and work, I have a range of hobbies that keep me engaged and energized. 
+            I am passionate about <b>photography</b>, where I capture moments and stories through the lens 
+            of my camera. <b>Reading books</b> is another favorite pastime, allowing me to explore new ideas 
+            and expand my understanding of various topics. I also enjoy playing <b>video games</b>, which not 
+            only offer entertainment but also enhance my strategic thinking and creativity. <b>Watching 
+            movies and series</b> is a great way for me to unwind and appreciate different forms of 
+            storytelling. <b>Football</b> is a sport I love both watching and playing, as it keeps me active 
+            and connected with the thrill of competition.Additionally, I have a deep interest in <b>graphic design</b>, 
+            where I enjoy expressing my creativity and experimenting with visual elements. This skill 
+            complements my academic background, allowing me to combine technical expertise with artistic expression.</p>
+        <p >In summary, <b>I am a dedicated individual with a passion for research, teaching, and creativity</b>. 
+            My journey continues as I strive to make meaningful contributions to the fields of Artificial 
+            Intelligence and Robotics, while also enjoying a well-rounded life filled with hobbies and interests 
+            that keep me inspired.</p>
+    </div>
+
+  <!-- Images of Me -->
+  <div class="w3-row-padding w3-padding-16" id="about">
+    <div class="w3-col m6">
+      <img src="/assets/img/about/me1.jpg" alt="Me" style="width:100%">
+    </div>
+    <div class="w3-col m6">
+      <img src="/assets/img/about/me2.jpg" alt="Me" style="width:100%">
+    </div>
+  </div>
+  <br><br><br>
+    <hr>
+    
+    <h3>Education</h3>
+    <hr>
+    <div class="timeline">
+        <div class="container left">
+          <div class="content">
+            <h6>January 2023 - Present</h6>
+            <h3>MS in Computer Science And Engineering</h3>
+            <h5>North South University</h5>
+            <p><b>CGPA:</b> 3.96 out of 4.00 (21.00 Credits complete) </p>
+            <p><b>Trail:</b> TBA</p>
+            <p><b>Thesis:</b> TBA</p>
+          </div>
+        </div>
+        <div class="container right">
+            <div class="content">
+              <h6>May 2017 - December 2021 </h6>
+              <h3>BSC in Computer Science And Engineering</h3>
+              <h5>North South University</h5>
+              <p><b>CGPA:</b> 3.70 (Avobe 90% marks)  </p>
+              <p><b>Trail:</b> Artificial Intelligence </p>
+              <p><b>Thesis:</b> Understanding The Healthcare Sector In Bangladesh: Experience And Services During The Covid-19 Pandemic. </p>
+            </div>
+          </div>
+          <div class="container left">
+            <div class="content">
+              <h6>Session: 2014 - 2015 </h6>
+              <h3>Higher Secondary School Certificate (HSC)</h3>
+              <h5>Rajshahi Shikkha Board Model School and College</h5>
+              <p><b>GPA:</b> 4.33 out of 5.00  </p>
+              <p><b>Group:</b> Science </p>
+            </div>
+          </div>
+          <div class="container right">
+              <div class="content">
+                <h6>Session: 2012 - 2013 </h6>
+                <h3>Secondary School Certificate (SSC) </h3>
+                <h5>Rajshahi Collegiate School</h5>
+                <p><b>GPA:</b> 5.00 out of 5.00 </p>
+                <p><b>Group:</b> Science </p>
+              </div>
+            </div>
+
       </div>
-      <h2 align="left">
-      More about saif:
-    </h2>
+      <br><br><br>
+      <hr>
     
-    
-    <div class="pstyle">
-      <ul>
-        <li>
-          <p align="Justify">
-            <i class="fa fa-birthday-cake" style="font-size:24px"></i>  15 December, 1998.
+      <h3>Awards and Achivement</h3>
+      <hr>
             
-          </p>
+      <div class="responsive">
+        <div class="gallery">
+          <a target="_blank" href="/assets/img/about/achivements/Graduate in CSE with magna cum laude.jpg">
+            <img src="/assets/img/about/achivements/Graduate in CSE with magna cum laude.jpg" alt="Forest" width="600" height="400">
+          </a>
+          <div class="desc">Graduate with magna cum laude</div>
+        </div>
+      </div>
+      <div class="responsive">
+        <div class="gallery">
+          <a target="_blank" href="/assets/img/about/achivements/RoboQuest Robo Soccer Runners Up.jpg">
+            <img src="/assets/img/about/achivements/RoboQuest Robo Soccer Runners Up.jpg" alt="Cinque Terre" width="600" height="400">
+          </a>
+          <div class="desc">RoboQuest Robo Soccer Runners Up</div>
+        </div>
+      </div>
+      
+      <div class="responsive">
+        <div class="gallery">
+          <a target="_blank" href="/assets/img/about/achivements/WooshWithoutWheel - 2nd Runners Up.jpg">
+            <img src="/assets/img/about/achivements/WooshWithoutWheel - 2nd Runners Up.jpg" alt="Northern Lights" width="600" height="400">
+          </a>
+          <div class="desc">Woosh Without Wheel organize by NSU IEEE RAS - 2nd Runners Up</div>
+        </div>
+      </div>
+      
+      <div class="responsive">
+        <div class="gallery">
+          <a target="_blank" href="/assets/img/about/achivements/Robotics Worckshop.jpg">
+            <img src="/assets/img/about/achivements/Robotics Worckshop.jpg" alt="Mountains" width="600" height="400">
+          </a>
+          <div class="desc">Second Best Performance at Robotics Worckshop - organized by NSU ACM Student Chapter</div>
+        </div>
+      </div>
+      <div class="responsive">
+        <div class="gallery">
+          <a target="_blank" href="/assets/img/about/achivements/Best Active Member.jpg">
+            <img src="/assets/img/about/achivements/Best Active Member.jpg" alt="Mountains" width="600" height="400">
+          </a>
+          <div class="desc">Best Active Member | NSU ACM Student Chapter | Summer 2018</div>
+        </div>
+      </div>
+    
+    <div class="clearfix"></div>
+    <hr>
+
+  <!-- Footer -->
+  <footer class="w3-container w3-padding-32" style="background-color: #070F2B;">
+  <div class="w3-row-padding">
+    <div class="w3-third">
+      <h3>Codatron</h3>
+      <p>Coming Soon</p>
+    </div>
+  
+    <div class="w3-third" style="color: #E1F7F5;">
+      <h3>BLOG POSTS</h3>
+      <ul class="w3-ul w3-hoverable">
+        <li class="w3-padding-16">
+          <img src="/assets/img/about/b1.jpg" class="w3-left w3-margin-right" style="width:50px; border: 2px solid #00b3ff;">
+          <span class="w3-large">SS LAB</span><br>
+          <span><a href="https://www.facebook.com/photo?fbid=822918393364805&set=a.355428496780466">See Details</a></span>
         </li>
-        <li>
-          <p align="Justify">
-            <i class="fa fa-map-marker" style="font-size:28px"></i>    Dhaka, Bangladesh.
-          </p>
-        </li>
-        <li>
-          <p align="Justify">
-            <i class="fa fa-home" style="font-size:24px"></i> Rajshahi,  Bangladesh.
-          </p>
-        </li>
-        <li>
-          <p align="Justify">
-            <i class="fa fa-language" style="font-size:24px"></i> Bangla, and English.
-          </p>
-        </li>
-        <li>
-          <p align="Justify">
-            <i class=" fa fa-check-square" style='font-size:24px' ></i> Islam.
-          </p>
-        </li>
-        <li>
-          <p align="Justify">
-            <i class="fa fa-heart" style="font-size:24px"></i> Married.
-          </p>
-        </li>
+        <li class="w3-padding-16">
+          <img src="/assets/img/about/b2.jpg" class="w3-left w3-margin-right" style="width:50px ; border: 2px solid #00b3ff;">
+          <span class="w3-large"> Digital Experience at Calisto</span><br>
+          <span><a href="https://www.facebook.com/photo?fbid=814762824180362&set=a.355428496780466">See Details</a></span>
+        </li> 
       </ul>
     </div>
-    <h2 align="left">
-      Hobbies:
-    </h2>
-    <ul>
-      <li>
-        <p align="Justify">
-          Photography <i class="fa fa-camera-retro"></i>   
-        </p>
-      </li>
-      <li>
-        <p align="Justify">
-          <a href="/Book/books.html">Reading books</a> <i class="fa fa-book"></i>   
-        </p>
-      </li>
-      <li>
-        <p align="Justify">
-          <a href="/Snowman/home.html">Playing Games</a> <i class="fa fa-gamepad"></i>   
-        </p>
-      </li>
-      <li>
-        <p align="Justify">
-          <a href="/MS/movieseries.html">Watching movie and series</a> <i class=" fa fa-film"></i>   
-        </p>
-      </li>
-      <li>
-        <p align="Justify">
-          Watching and playing football <i class="fa fa-soccer-ball-o"></i>   
-        </p>
-      </li>
-      <li>
-        <p align="Justify">
-          Graphics designing <i class="fa fa-object-group"></i>   
-        </p>
-      </li>
-    </ul>
-    
 
-
+    <div class="w3-third">
+      <h3>POPULAR TAGS</h3>
+      <p>
+        <span class="w3-tag w3-white w3-margin-bottom">Research</span> 
+        <span class="w3-tag w3-black w3-small w3-margin-bottom">AI</span> 
+        <span class="w3-tag w3-black w3-small w3-margin-bottom">Robotics</span>
+        <span class="w3-tag w3-black w3-small w3-margin-bottom">Machine Learning</span> 
+        <span class="w3-tag w3-black w3-small w3-margin-bottom">JAVA</span> 
+        <span class="w3-tag w3-black w3-small w3-margin-bottom">DEEP LEARNING</span>
+        <span class="w3-tag w3-black w3-small w3-margin-bottom">C</span> 
+        <span class="w3-tag w3-black w3-small w3-margin-bottom">C++</span> 
+        <span class="w3-tag w3-black w3-small w3-margin-bottom">Ideas</span> 
+        <span class="w3-tag w3-black w3-small w3-margin-bottom">Algorithm</span>
+        <span class="w3-tag w3-black w3-small w3-margin-bottom">NSU</span> 
+        <span class="w3-tag w3-black w3-small w3-margin-bottom">Programming</span> 
+        <span class="w3-tag w3-black w3-small w3-margin-bottom">Invention</span>
+        <span class="w3-tag w3-black w3-small w3-margin-bottom">Games</span> 
+        <span class="w3-tag w3-black w3-small w3-margin-bottom">Rajshahi</span>
+        <span class="w3-tag w3-black w3-small w3-margin-bottom">Dhaka</span>
+        <span class="w3-tag w3-small w3-margin-bottom" style="color: red; background-color: rgb(8, 134, 8);">Bangladesh</span>
+      </p>
     </div>
 
-
   </div>
+  </footer>
+  
+  <div class="w3-black w3-center w3-padding-24">All right reserved</div>
+
+<!-- End page content -->
+</div>
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+    document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+    document.getElementById("myOverlay").style.display = "none";
+}
+</script>
 
 </body>
-
 </html>

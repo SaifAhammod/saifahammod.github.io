@@ -3,220 +3,600 @@
 
 <head>
   <title>Experience</title>
-  <link rel="icon" type="image/x-icon" href="Images/Logo.png">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" type="image/x-icon" href="assets/img/logo.png">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <style>
+    img {
+      border: 5px solid #00b3ff;
+    }
+
+    body {
+      background-color: #1B1A55;
+      font-family: "Raleway", sans-serif;
+      color: #E1F7F5
+    }
+
+    b {
+      color: #ffffff;
+    }
+
+    h1 {
+      font-family: "Raleway", sans-serif;
+      color: #00b3ff
+    }
+
+    p,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      font-family: "Raleway", sans-serif;
+      color: #E1F7F5;
+
+    }
+
+    /* Timeline */
+    /* The actual timeline (the vertical ruler) */
+    .timeline {
+      position: relative;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    /* The actual timeline (the vertical ruler) */
+    .timeline::after {
+      content: '';
+      position: absolute;
+      width: 6px;
+      background-color: #E1F7F5;
+      top: 0;
+      bottom: 0;
+      left: 50%;
+      margin-left: -3px;
+    }
+
+    /* Container around content */
+    .container {
+      padding: 10px 40px;
+      position: relative;
+      background-color: inherit;
+      width: 50%;
+    }
+
+    /* The circles on the timeline */
+    .container::after {
+      content: '';
+      position: absolute;
+      width: 25px;
+      height: 25px;
+      right: -17px;
+      background-color: #E1F7F5;
+      border: 4px solid #FF9F55;
+      top: 15px;
+      border-radius: 50%;
+      z-index: 1;
+    }
+
+    /* Place the container to the left */
+    .left {
+      left: 0;
+    }
+
+    /* Place the container to the right */
+    .right {
+      left: 50%;
+    }
+
+    /* Add arrows to the left container (pointing right) */
+    .left::before {
+      content: " ";
+      height: 0;
+      position: absolute;
+      top: 22px;
+      width: 0;
+      z-index: 1;
+      right: 30px;
+      border: medium solid white;
+      border-width: 10px 0 10px 10px;
+      border-color: transparent transparent transparent white;
+    }
+
+    /* Add arrows to the right container (pointing left) */
+    .right::before {
+      content: " ";
+      height: 0;
+      position: absolute;
+      top: 22px;
+      width: 0;
+      z-index: 1;
+      left: 30px;
+      border: medium solid white;
+      border-width: 10px 10px 10px 0;
+      border-color: transparent white transparent transparent;
+    }
+
+    /* Fix the circle for containers on the right side */
+    .right::after {
+      left: -16px;
+    }
+
+    /* The actual content */
+    .content {
+      padding: 20px 30px;
+      background-color: #070F2B;
+      position: relative;
+      border-radius: 6px;
+    }
+
+    /* Media queries - Responsive timeline on screens less than 600px wide */
+    @media screen and (max-width: 600px) {
+
+      /* Place the timelime to the left */
+      .timeline::after {
+        left: 31px;
+      }
+
+      /* Full-width containers */
+      .container {
+        width: 100%;
+        padding-left: 70px;
+        padding-right: 25px;
+      }
+
+      /* Make sure that all arrows are pointing leftwards */
+      .container::before {
+        left: 60px;
+        border: medium solid white;
+        border-width: 10px 10px 10px 0;
+        border-color: transparent white transparent transparent;
+      }
+
+      /* Make sure all circles are at the same spot */
+      .left::after,
+      .right::after {
+        left: 15px;
+      }
+
+      /* Make all right containers behave like the left ones */
+      .right {
+        left: 0%;
+      }
+    }
+
+    /* ------------------------------------------------------------------------------------------------------------- */
+    /* Gallery Starts Here */
+    div.gallery {
+      border: 1px solid #ccc;
+    }
+
+    div.gallery:hover {
+      border: 1px solid #00b3ff;
+    }
+
+    div.gallery img {
+      width: 100%;
+      height: auto;
+    }
+
+    div.desc {
+      padding: 15px;
+      text-align: center;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    .responsive {
+      padding: 0 6px;
+      float: left;
+      width: 24.99999%;
+    }
+
+    @media only screen and (max-width: 700px) {
+      .responsive {
+        width: 49.99999%;
+        margin: 6px 0;
+      }
+    }
+
+    @media only screen and (max-width: 500px) {
+      .responsive {
+        width: 100%;
+      }
+    }
+
+    .clearfix:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+
+    .conference {
+      background-color: #cbc9f1;
+      border-left: 6px solid #9290C3;
+      margin-top: 5px;
+      padding: 1px 20px;
+      color: #1B1A55;
+    }
+  </style>
 </head>
 
-<body>
-  <!-- The sidebar -->
+<body class="w3-content" style="max-width:1600px">
 
-  <div align="center" class="sidebar">
-    <div align="center" class="sidebarlogo">
-      <a href="https://saifahammod.me"><img src="Images/logo.png" alt="Saif Ahammod" style="width:70%;"></a>
+  <!-- Sidebar/menu -->
+  <nav class="w3-sidebar w3-collapse w3-animate-left" style="z-index:3;width:300px; background-color: #070F2B;"
+    id="mySidebar"><br>
+    <div class="w3-container">
+      <a href="#" onclick="w3_close()" class="w3-hide-large w3-right w3-jumbo w3-padding w3-hover-grey"
+        title="close menu">
+        <i class="fa fa-remove"></i>
+      </a>
+      <img src="/assets/img/dp.png" style="width:60%;" class="w3-round"><br><br>
+      <h3>Saif Ahammod Khan</h3>
+      <p class="w3-text-light-grey">Graduate Teaching Assistant</p>
     </div>
-    <a href="about.html">About</a>
-    <a href="education.html">Education</a>
-    <a class="active" href="experience.html">Experience</a>
-    <a href="expertise.html">Expertise</a>
-    <a href="publication.html">Publications</a>
-    <a href="project.html">Projects</a>
-    <a href="referance.html">Referances</a>
-    <a href="contact.html">Contact</a>
-
-    <button class="button button1"><a href="Doc/cv.pdf">Resume</a></button>
-  </div>
-
-  <div align="center" class="content">
-    ​<div id="mySidenav" class="sidenav">
-      <a href="hobbies/gallery.html" id="gallery">Gallery</a>
-      <a href="hobbies/photography.html" id="photography">Photography</a>
-      <a href="hobbies/design.html" id="design">Design</a>
-      <a href="hobbies/videos.html" id="video">Video</a>
+    <div class="w3-bar-block">
+      <a href="/about.html" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i
+          class="fa fa-user fa-fw w3-margin-right"></i>ABOUT</a>
+      <a href="/research.html" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i
+          class="fa fa-lightbulb-o fa-fw w3-margin-right"></i>RESEARCH</a>
+      <a href="/experience.html" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"
+        style="color: #00b3ff;"><i class="fa fa-suitcase fa-fw w3-margin-right"></i>EXPERIENCE</a>
+      <a href="/experties.html" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i
+          class="fa fa-laptop fa-fw w3-margin-right"></i>EXPERTIES</a>
+      <a href="/contact.html" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i
+          class="fa fa-map-marker fa-fw w3-margin-right"></i>CONTACT</a>
+      <a href="/gallery.html" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i
+          class="fa fa-camera fa-fw w3-margin-right"></i>GALLERY</a>
+      <a href="/assets/doc/cv.pdf" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i
+          class="fa fa-paperclip fa-fw w3-margin-right"></i>RESUME</a>
     </div>
-    <div class="pagebackground">
-      <!-- Page content -->
-      <div class="firstimage">
-        <img src="Images/PagePic/experience.png" alt="Education" width="200" height="200">
+    <div class="w3-panel w3-large" style="color: #00b3ff;">
+      <!-- <a href="Codatron.com"><i class="fa fa-suitcase w3-hover-opacity"></i></a> -->
+      <a href="https://www.facebook.com/SaifAhammod04/"><i class="fa fa-facebook-official w3-hover-opacity"></i></a>
+      <!-- <a href=""><i class="fa fa-youtube w3-hover-opacity"></i></a> -->
+
+      <a href="https://github.com/saif-ahammod"><i class="fa fa-github w3-hover-opacity"></i></a>
+      <a href="https://www.linkedin.com/in/saif-ahammod/"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
+    </div>
+  </nav>
+
+  <!-- Overlay effect when opening sidebar on small screens -->
+  <div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer"
+    title="close side menu" id="myOverlay"></div>
+
+  <!-- !PAGE CONTENT! -->
+  <div class="w3-main" style="margin-left:300px">
+
+    <!-- Header -->
+    <header id="portfolio">
+      <a href="/about.html"><img src="/assets/img/logo.png" style="width:65px;  border: 0px solid #00b3ff"
+          class="w3-circle w3-right w3-margin w3-hide-large w3-hover-opacity"></a>
+      <span class="w3-button w3-hide-large w3-xxlarge w3-hover-text-grey" onclick="w3_open()"><i
+          class="fa fa-bars"></i></span>
+      <div class="w3-container">
+        <h1>Experience</h1>
       </div>
+    </header>
 
-      <h2 align="left">
-        Work & Experience:
-      </h2>
+
+    <div class="w3-container w3-padding-large" style="margin-bottom:32px">
+      <hr>
+      <h3>Work</h3>
+      <hr>
       <ul>
         <li>
-          <div class="EducationDegree">
-            Research Assistant
-          </div>
-          <div class="EducationInstitue">
-            <b>North South University</b>
-          </div>
-          <div class="Educationtimeperiod">
-            July 2023 – Present
-          </div>
-          <div class="Educationdetails">
-            My research is supervides by <a href="http://ece.northsouth.edu/people/dr-shahnewaz-siddique/"> Dr. Shahnewaz Siddique</a>.
-            I assist Dr. Shahnewaz Siddique sir in research in Robotics and Artificial Intelligence (AI). 
-            My role includes conducting experiments, analyzing data, and design and implement robots to develop innovative 
-            solutions. I contribute to research reports and stay updated on industry trends, working towards advancing the 
-            fields of Robotics and AI.
-          </div>
-        </li>
-        <br>
-        <li>
-          <div class="EducationDegree">
-            Graduate Teaching Assistant
-          </div>
-          
-          <div class="EducationInstitue">
-            <b>North South University</b>
-          </div>
-          <div class="Educationtimeperiod">
-            August 2023 – Present
-          </div>
-          <div class="Educationdetails">
-            Assisting the faculty members and their students in academic tasks, including invigilating exam, 
-            evaluating exam and homework scripts, helping students in study, etc.
-          </div>
-        </li>
-        <br>
-        <li>
-          <div class="EducationDegree">
-            Android App Developer
-          </div>
-          <div class="EducationInstitue">
-            <b>HOP IN</b>
-          </div>
-          <div class="Educationtimeperiod">
-            August 2018 – January 2020
-          </div>
-          <div class="Educationdetails">
-            HOP IN is a car-sharing service where students get to Share-A-Car with their university mates.The system is an app based 
-            ride-sharing service which connects you with other university students traveling in the same direction. A car is shared by FOUR students.
-          </div>
-          
-        </li>
-        <br>
-        <li>
-          <div class="EducationDegree">
-            Founding Member
-          </div>
-          <div class="EducationInstitue">
-            <b>NSU Ignite</b>
-          </div>
-          <div class="Educationtimeperiod">
-            November 2018 – Present
-          </div>
-          <div class="Educationdetails">
-            NSU Ignite is a dynamic and innovative team comprised of six skilled Computer Science and Engineering (CSE) engineers,
-              along with a talented Electrical and Electronic Engineering (EEE) engineer. Their primary focus is on conceptualizing, 
-              designing, and developing robotics projects. With a passion for robotics at its core, NSU Ignite has taken the lead in 
-              various robotics competitions, showcasing their exceptional talent and dedication. Their commitment to excellence is 
-              evident through the numerous awards they have secured in these competitions.
-          </div>
-          
-        </li>
-        <br>
-        <li>
-          <div class="EducationDegree">
-            Mentor and Trainer of Robotics
-          </div>
-          <div class="EducationInstitue">
-            <b>NSU ACM Student Chapter</b>
-          </div>
-          <div class="Educationtimeperiod">
-            August 2018 – January 2019 
-          </div>
-          <div class="Educationdetails">
-            As a Robotics Mentor at NSU ACM Student Chapter, I guided probationary members in learning robotics. 
-            I provided hands-on instruction, technical insight, and problem-solving guidance. Collaborating on projects, 
-            I fostered teamwork and skill development.
-          </div>
-          
-        </li>
-        <br>
-        <li>
-          <div class="EducationDegree">
-            Senior Member 
-          </div>
-          <div class="EducationInstitue">
-            <b>NSU ACM Student Chapter</b>
-          </div>
-          <div class="Educationtimeperiod">
-            September 2017  – January 2019
-          </div>
-          <div class="Educationdetails">
-            NSU ACM Student Chapter is one of the 680 chapters around the world and was the first student chapter
-            of the Association for Computing Machineries in Bangladesh. It was officially chartered on 17th January 2017.
-            NSU ACM SC serves the wide scope of ACM to advance computing as a science and profession. 
-          </div>
-          
-        </li>
-      </ul>
-      <h2 align="left">
-        Award & Certificate:
-      </h2>
-      <ul>
-        <li>
-          <p align="left"><b>Best Active Member</b> | <b>NSU ACM Student Chapter</b> | Summer 2018</p>
-        </li>
-      </ul>
-      <h2 align="left">
-        Volunteering:
-      </h2>
-      <ul>
-        <li>
-          <p align="left"><b>Technovation 2018</b> | <b>Organized by NSU ACM Student Chapter</b> | Spring 2018</p>
-
-        </li>
-        <li>
-          <p align="left"><b>Bit Arena 2017</b> | <b>Organized by NSU CEC</b> | Summer 2017</p>
+          <h4>Graduate Teaching Assistant </h4>
         </li>
 
-      </ul>
-      <h2 align="left">
-        Participation:
-      </h2>
-      <ul>
-        <li>
-          <p align="left"><b>RoboQuest 1.0</b> | Organized by NSU CEC | <b>Robo Soccer Segment</b></p>
-        </li>
-        <li>
-          <p align="left"><b>Robo Carnival</b> | Organized by BUET Robotics Society | <b>LFR and Robo Soccer Segment
-            </b></p>
-        </li>
-        <li>
-          <p align="left"><b>Techsurgence 2019</b> | Organized by Department of ICT BUP | <b>Robo Soccer Segment </b>
-          </p>
-        </li>
-        <li>
-          <p align="left"><b>Robolution 2019</b> | Organized by MIST | <b>Robo Soccer Segment </b></p>
-        </li>
-        <li>
-          <p align="left"><b>ICASERT International Conferrence and Robo Fest</b> | Organized by Department of CSE, EWU |
-            <b>Robo Soccer Segment</b></p>
-        </li>
-        <li>
-          <p align="left"><b>Woosh Without Wheel</b> | Organized by Robotics and Automation Society IEEE NSU Student
-            Branch | <b>Robot Without Wheel</b></p>
-        </li>
-        <li>
-          <p align="left"><b>Hackathon on Android App Development </b> | Organized by NSU Proctor Office | <b>Android
-              Application Development</b></p>
-        </li>
+        <div class="w3-row">
+          <div class="w3-threequarter w3-container ">
+
+            <p>
+              August 2023 – Present
+              <br>
+              <b style="color: #00b3ff;">Department of ECE, North South University</b>
+              <br>
+              Assisting the faculty members and their students in academic tasks, including invigilating
+              exam, evaluating exam and homework scripts, helping students in study, etc.
+            </p>
+          </div>
+          <div class="w3-quarter w3-container">
+            <img src="/assets/img/experience/North South University.png" alt=""
+              style="width:40%; border: 0px solid #00b3ff;">
+          </div>
+        </div>
+
+        <br>
 
         <li>
-          <p align="left"><b>Mecceleration 2019 </b> | Organized by Department of Mechanical and Chemical Engineering,
-            IUT | <b>Android Application Development</b></p>
+          <h4>Android App Developer </h4>
         </li>
-      </ul>
+        <div class="w3-row">
+          <div class="w3-threequarter w3-container ">
 
-      <br>
-      <br>
-      <br>
-      <br>
-      <!-- Page content ends here -->
+            <p style="text-align: justify;">
+              August 2018 – January 2020
+              <br>
+              <b style="color: #00b3ff;">HOP IN</b>
+              <br>
+              HOP IN is a car-sharing service where students get to Share-A-Car with their university mates.The system
+              is
+              an app based ride-sharing service which connects you with other university students traveling in the same
+              direction.
+              A car is shared by FOUR students.
+            </p>
+          </div>
+          <div class="w3-quarter w3-container">
+            <img src="/assets/img/experience/hopin.png" alt="" style="width:40%; border: 0px solid #00b3ff;">
+          </div>
+        </div>
+
+
+        <br>
+        <li>
+          <h4>Founding Member </h4>
+        </li>
+        <div class="w3-row">
+          <div class="w3-threequarter w3-container ">
+
+            <p style="text-align: justify;">
+              November 2018 – Present
+              <br>
+              <b style="color: #00b3ff;">NSU Ignite</b>
+              <br>
+              NSU Ignite is a dynamic and innovative team comprised of six skilled Computer Science and Engineering
+              (CSE) engineers, along with a talented Electrical and Electronic Engineering (EEE) engineer.
+              Their primary focus is on conceptualizing, designing, and developing robotics projects.
+              With a passion for robotics at its core, NSU Ignite has taken the lead in various robotics
+              competitions, showcasing their exceptional talent and dedication. Their commitment to
+              excellence is evident through the numerous awards they have secured in these competitions.
+            </p>
+          </div>
+          <div class="w3-quarter w3-container">
+            <img src="/assets/img/experience/ignite.png" alt="" style="width:40%; border: 0px solid #00b3ff;">
+          </div>
+        </div>
+        <br>
+        <li>
+          <h4>Mentor and Trainer of Robotics </h4>
+        </li>
+        <div class="w3-row">
+          <div class="w3-threequarter w3-container ">
+
+            <p>
+              August 2018 – January 2019
+              <br>
+              <b style="color: #00b3ff;">NSU ACM Student Chapter</b>
+              <br>
+              As a Robotics Mentor at NSU ACM Student Chapter, I guided probationary members in learning robotics.
+              I provided hands-on instruction, technical insight, and problem-solving guidance. Collaborating on
+              projects,
+              I fostered teamwork and skill development.
+            </p>
+          </div>
+          <div class="w3-quarter w3-container">
+            <img src="/assets/img/experience/nsu acm.png" alt="" style="width:40%; border: 0px solid #00b3ff;">
+          </div>
+        </div>
+        <br>
+        <li>
+          <h4>Senior Member </h4>
+        </li>
+        <div class="w3-row">
+          <div class="w3-threequarter w3-container ">
+
+            <p>
+              September 2017 – January 2019
+              <br>
+              <b style="color: #00b3ff;">NSU ACM Student Chapter</b>
+              <br>
+              NSU ACM Student Chapter is one of the 680 chapters around the world and was the first student
+              chapter of the Association for Computing Machineries in Bangladesh. It was officially chartered
+              on 17th January 2017. NSU ACM SC serves the wide scope of ACM to advance computing as a science and
+              profession.
+            </p>
+          </div>
+          <div class="w3-quarter w3-container">
+            <img src="/assets/img/experience/nsu acm.png" alt="" style="width:40%; border: 0px solid #00b3ff;">
+          </div>
+        </div>
+
+      </ul>
+      <br><br><br>
+      <hr>
+      <h3>Training</h3>
+      <hr>
+      
+      <div class="responsive">
+        <div class="gallery">
+          <a target="_blank" href="/assets/img/experience/Workshop/robotics.jpg">
+            <img src="/assets/img/experience/Workshop/robotics.jpg" alt="Forest" width="600" height="400">
+          </a>
+          <div class="desc">Robotics Workshop of Summer 2018 - Organized by NSU ACM Student Chapter</div>
+        </div>
+      </div>
+      <div class="responsive">
+        <div class="gallery">
+          <a target="_blank" href="/assets/img/experience/Workshop/android.jpg">
+            <img src="/assets/img/experience/Workshop/android.jpg" alt="Forest" width="600" height="400">
+          </a>
+          <div class="desc">Android Workshop of Summer 2018 - Organized by NSU ACM Student Chapter</div>
+        </div>
+      </div>
+      <div class="responsive">
+        <div class="gallery">
+          <a target="_blank" href="/assets/img/experience/Workshop/linux.jpg">
+            <img src="/assets/img/experience/Workshop/linux.jpg" alt="Cinque Terre" width="600" height="400">
+          </a>
+          <div class="desc">Workshop on Linus and Unix Operating System - Organized by NSU ACM Student Chapter </div>
+        </div>
+      </div>
+      <div class="responsive">
+        <div class="gallery">
+          <a target="_blank" href="/assets/img/experience/Workshop/drone.jpg">
+            <img src="/assets/img/experience/Workshop/drone.jpg" alt="Cinque Terre" width="600" height="400">
+          </a>
+          <div class="desc">Drone Making Workshop - Organized by Research and Development (R&D) Section, NSU CEC and Conducted by Rotor
+            Solution and Thrust </div>
+        </div>
+      </div>
+      <div class="clearfix"></div>
+      <br><br><br>
+      <hr>
+      <h3>Volunteer</h3>
+      <hr>
+      
+      <div class="responsive">
+        <div class="gallery">
+          <a target="_blank" href="/assets/img/experience/Vollunteering/Technovation.jpg">
+            <img src="/assets/img/experience/Vollunteering/Technovation.jpg" alt="Forest" width="600" height="400">
+          </a>
+          <div class="desc">Technovation 2018 | Organized by NSU ACM Student Chapter | Spring 2018</div>
+        </div>
+      </div>
+      <div class="responsive">
+        <div class="gallery">
+          <a target="_blank" href="/assets/img/experience/Vollunteering/Bit Arena.jpg">
+            <img src="/assets/img/experience/Vollunteering/Bit Arena.jpg" alt="Cinque Terre" width="600" height="400">
+          </a>
+          <div class="desc">Bit Arena 2017 | Organized by NSU CEC | Summer 2017</div>
+        </div>
+      </div>
+      
+    
+    <div class="clearfix"></div>
+
+      <br><br><br>
+      <hr>
+      <h3>Participate</h3>
+
+      <hr>
+      <ol>
+        <li>
+
+          <b style="color: #00b3ff;">RoboQuest 1.0</b> | Organized by NSU CEC | Robo Soccer Segment
+        </li>
+        <li>
+
+          <b style="color: #00b3ff;">Robo Carnival</b> | Organized by BUET Robotics Society | LFR and Robo Soccer Segment
+        </li>
+        <li>
+
+          <b style="color: #00b3ff;">Techsurgence 2019</b> || Organized by Department of ICT BUP || Robo Soccer Segment
+        </li>
+        <li>
+
+          <b style="color: #00b3ff;">Robolution 2019</b> || Organized by MIST || Robo Soccer Segment
+        </li>
+        <li>
+
+          <b style="color: #00b3ff;">ICASERT International Conferrence and Robo Fest</b> || Organized by Department of CSE, EWU || Robo Soccer Segment
+        </li>
+        <li>
+
+          <b style="color: #00b3ff;">Woosh Without Wheel</b> || Organized by Robotics and Automation Society IEEE NSU Student Branch || Robot Without
+          Wheel
+        </li>
+        <li>
+
+          <b style="color: #00b3ff;">Hackathon on Android App Development</b> || Organized by NSU Proctor Office || Android Application Development
+        </li>
+        <li>
+
+          <b style="color: #00b3ff;">Mecceleration 2019</b> || Organized by Department of Mechanical and Chemical Engineering, IUT || Android Application
+          Development
+        </li>
+
+      </ol>
+
+
+
+
+
+
+
+      <hr>
+      <!-- Footer -->
+      <footer class="w3-container w3-padding-32" style="background-color: #070F2B;">
+        <div class="w3-row-padding">
+          <div class="w3-third">
+            <h3>Codatron</h3>
+            <p>Coming Soon</p>
+          </div>
+
+          <div class="w3-third" style="color: #E1F7F5;">
+            <h3>BLOG POSTS</h3>
+            <ul class="w3-ul w3-hoverable">
+              <li class="w3-padding-16">
+                <img src="/assets/img/about/b1.jpg" class="w3-left w3-margin-right"
+                  style="width:50px; border: 2px solid #00b3ff;">
+                <span class="w3-large">SS LAB</span><br>
+                <span><a href="https://www.facebook.com/photo?fbid=822918393364805&set=a.355428496780466">See
+                    Details</a></span>
+              </li>
+              <li class="w3-padding-16">
+                <img src="/assets/img/about/b2.jpg" class="w3-left w3-margin-right"
+                  style="width:50px; border: 2px solid #00b3ff;">
+                <span class="w3-large"> Digital Experience at Calisto</span><br>
+                <span><a href="https://www.facebook.com/photo?fbid=814762824180362&set=a.355428496780466">See
+                    Details</a></span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="w3-third">
+            <h3>POPULAR TAGS</h3>
+            <p>
+              <span class="w3-tag w3-white w3-margin-bottom">Research</span>
+              <span class="w3-tag w3-black w3-small w3-margin-bottom">AI</span>
+              <span class="w3-tag w3-black w3-small w3-margin-bottom">Robotics</span>
+              <span class="w3-tag w3-black w3-small w3-margin-bottom">Machine Learning</span>
+              <span class="w3-tag w3-black w3-small w3-margin-bottom">JAVA</span>
+              <span class="w3-tag w3-black w3-small w3-margin-bottom">DEEP LEARNING</span>
+              <span class="w3-tag w3-black w3-small w3-margin-bottom">C</span>
+              <span class="w3-tag w3-black w3-small w3-margin-bottom">C++</span>
+              <span class="w3-tag w3-black w3-small w3-margin-bottom">Ideas</span>
+              <span class="w3-tag w3-black w3-small w3-margin-bottom">Algorithm</span>
+              <span class="w3-tag w3-black w3-small w3-margin-bottom">NSU</span>
+              <span class="w3-tag w3-black w3-small w3-margin-bottom">Programming</span>
+              <span class="w3-tag w3-black w3-small w3-margin-bottom">Invention</span>
+              <span class="w3-tag w3-black w3-small w3-margin-bottom">Games</span>
+              <span class="w3-tag w3-black w3-small w3-margin-bottom">Rajshahi</span>
+              <span class="w3-tag w3-black w3-small w3-margin-bottom">Dhaka</span>
+              <span class="w3-tag w3-small w3-margin-bottom"
+                style="color: red; background-color: rgb(8, 134, 8);">Bangladesh</span>
+            </p>
+          </div>
+
+        </div>
+      </footer>
+
+      <div class="w3-black w3-center w3-padding-24">All right reserved</div>
+
+      <!-- End page content -->
     </div>
-  </div>
+
+    <script>
+      // Script to open and close sidebar
+      function w3_open() {
+        document.getElementById("mySidebar").style.display = "block";
+        document.getElementById("myOverlay").style.display = "block";
+      }
+
+      function w3_close() {
+        document.getElementById("mySidebar").style.display = "none";
+        document.getElementById("myOverlay").style.display = "none";
+      }
+    </script>
+
 </body>
 
 </html>

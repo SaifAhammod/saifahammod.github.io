@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>About Saif</title>
+  <link rel="icon" type="image/x-icon" href="Images/Logo.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+<style>
+  body {
+    background-color: #f1f1f1;
+    overflow-x: hidden;
+  }
+  * {
+    box-sizing: border-box;
+    font-family:Arial, Helvetica, sans-serif;
+  }
+  a:link {
+    color: rgb(3, 7, 255)
+    background-color: transparent;
+    text-decoration: none;
+  }
+  a:visited {
+    color: #00087c;
+    background-color: transparent;
+    text-decoration-style: double;
+  }
+  a:hover {
+    color: red;
+    background-color: transparent;
+  }
+  a:active {
+    color: yellow;
+    background-color: transparent;
+    text-decoration: underline;
+  }
+  .sidebar {
+    margin: 0;
+    padding: 0;
+    width: 250px;
+    background-color: #ffffff;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+
+  }
+
+  div.sidebarlogo {
+    margin-top: 40px;
+    margin-bottom: 20px;
+  }
+
+  /* Sidebar links */
+  .sidebar a {
+    display: block;
+    color: black;
+    padding: 16px;
+    text-decoration: none;
+    font-family:Arial, Helvetica, sans-serif;
+  }
+
+  /* Active/current link */
+  .sidebar a.active {
+
+    color: black;
+    font-size: medium;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: bold;
+
+  }
+
+  /* Links on mouse-over */
+  .sidebar a:hover:not(.active) {
+    font-size: larger;
+    color: rgb(0, 0, 0);
+    letter-spacing: 2px;
+    transition: 0.3s;
+  }
+
+  /* Page content. The value of the margin-left property should match the value of the sidebar's width property */
+  div.content {
+    margin-left: 250px;
+    padding: 1px 16px;
+    height: auto;
+    
+  }
+
+  /* On screens that are less than 700px wide, make the sidebar into a topbar */
+  @media screen and (max-width: 700px) {
+    .sidebar {
+      width: 100%;
+      height: auto;
+      position: relative;
+    }
+
+    .sidebar a {
+      float: left;
+    }
+
+    div.content {
+      margin-left: 0;
+    }
+  }
+
+  /* On screens that are less than 400px, display the bar vertically, instead of horizontally */
+  @media screen and (max-width: 400px) {
+    .sidebar a {
+      text-align: center;
+      float: none;
+    }
+  }
+
+
+  .containeraboutpic {
+    position: relative;
+    width: 500px;
+    max-width: 1500px;
+
+  }
+
+  .image {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-bottom-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+   
+  }
+
+  .overlay {
+    box-sizing: border-box;
+    position: absolute;
+    bottom: 4px;
+    background: rgba(0, 0, 0, 0.5);
+    /* Black see-through */
+    width: 100%;
+    transition: .5s ease;
+    opacity: 0;
+    color: white;
+    font-size: 20px;
+    padding: 20px;
+    text-align: center;
+
+  }
+  div.EducationDegree{
+      text-align: left;
+      font-size: larger;
+      font-weight: bold;
+      line-height: 1.3;
+  }
+  div.EducationInstitue{
+    text-align: left;
+    font-size: large;
+    line-height: 1.3;
+}
+div.Educationdetails{
+  text-align: justify;
+  font-size:medium;
+  line-height: 1.3;
+}
+div.Educationtimeperiod{
+  text-align: left;
+  font-size: small;
+  font-weight: bold;
+  line-height: 1.3;
+}
+
+div.bulletpoint{
+  text-align: left;
+  font-size: larger;
+  line-height: 1.3;
+}
+
+  .containeraboutpic:hover .overlay {
+    opacity: 1;
+    
+  }
+
+  .firstimage {
+    margin-top: 90px;
+    width: 100%;
+  }
+  div.pagebackground{
+    width: 1000px;
+  }
+
+  p {
+ 
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:medium;
+
+
+  }
+
+  div.pstyle {
+    line-height: 1.3;
+  }
+
+  .button {
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border-radius: 2px;
+    margin-top: 40px;
+    border-top-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+  }
+
+  .button1 {
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+  }
+
+  .button1:hover {
+    background-color: white;
+    color: white;
+  }
+
+
+
+  #mySidenav a {
+    position: absolute;
+    right: -140px;
+    width: 200px;
+    transition: 0.3s;
+    padding: 15px;
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    border-radius: 5px 0 0 5px;
+    text-align: right;
+    background-color: rgb(0, 0, 0);
+  } 
+
+  #mySidenav a:hover {
+    right: 0;
+    background-color: #f1f1f1;
+    color: #555;
+    border: 2px solid #555;
+    }
+
+  #gallery {
+    top: 160px;
+
+  }
+
+  #photography {
+    top: 220px;
+
+  }
+
+  #design {
+    top: 280px;
+
+  }
+
+  #video {
+    top: 340px;
+  
+  }
+
+ /* Education achievementGallery starts here  */
+ .container {
+    display: flex;
+    width: 100%;
+    padding: 4% 2%;
+    box-sizing: border-box;
+    height: 50vh;
+  }
+  
+  .box {
+    flex: 1;
+    overflow: hidden;
+    transition: .5s;
+    margin: 0 2%;
+    box-shadow: 0 20px 30px rgba(0,0,0,.1);
+    line-height: 0;
+  }
+  
+  .box > img {
+    width: 200%;
+    height: calc(100% - 10vh);
+    object-fit: cover; 
+    transition: .5s;
+  }
+  
+  .box > span {
+    font-size: 2vh;
+    display: block;
+    text-align: center;
+    height: 10vh;
+    line-height: 1.5;
+  }
+  
+  .box:hover { flex: 1 1 50%; }
+  .box:hover > img {
+    width: 100%;
+    height: 100%;
+  }
+
+
+
+
+  /*XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX*/
+
+* {
+  box-sizing: border-box;
+}
+
+img {
+  
+  vertical-align: middle;
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+  position: relative;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Container for image text */
+.caption-containerx {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.column {
+  float: right;
+  width: 25%;
+  padding-right: 2px;
+  padding-left: 2px;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+ /* Education achievement gallery ends here */
+</style>
+</head>
+
+<body>
+  <!-- The sidebar -->
+
+  <div align="center" class="sidebar">
+    <div align="center" class="sidebarlogo">
+      <a href="https://saifahammod.me"><img src="Images/logo.png" alt="Saif Ahammod" style="width:70%;"></a>
+    </div>
+    <a class="active" href="about.html">About</a>
+    <a href="education.html">Education</a>
+    <a href="experience.html">Experience</a>
+    <a href="expertise.html">Expertise</a>
+    <a href="publication.html">Publications</a>
+    <a href="project.html">Projects</a>
+    <a href="referance.html">Referances</a>
+    <a href="contact.html">Contact</a>
+
+    <button class="button button1"><a href="Doc/cv.pdf">Resume</a></button>
+  </div>
+
+  <!-- Page content -->
+  <div align="center" class="content">
+    ​<div id="mySidenav" class="sidenav">
+      <a href="hobbies/gallery.html" id="gallery">Gallery</a>
+      <a href="hobbies/photography.html" id="photography">Photography</a>
+      <a href="hobbies/design.html" id="design">Design</a>
+      <a href="hobbies/videos.html" id="video">Video</a>
+    </div>
+    <div class="pagebackground">
+      <div class="containeraboutpic">
+        <div class="firstimage"> 
+          <img src="Images/AboutPic1.jpg" alt="Saif Ahammod" style="width:100%;">
+        </div>
+        <div class="overlay">MD. SAIF AHAMMOD KHAN</div>
+      </div>
+      <p >
+        <b>Researcher on Artificial Intelligence & Robotics</b>
+      </p>
+      <h2 align="left">
+        About Saif:
+      </h2>
+      <div class="pstyle">
+        <p align="Justify">
+          Saif Ahammod Khan is a researcher in the fields of Robotics 
+          and Artificial Intelligence. He holds a remarkable academic record, 
+          having graduated with Magna Cum Laude honors from North South University (NSU), 
+          where he earned a Bachelor's degree in Computer Science and Engineering (CSE). 
+          As a current MS student at NSU, Saif is embracing the opportunity to delve deeper 
+          into the complexities of Robotics and AI. He is actively engaged in various research 
+          projects, collaborating with renowned faculty members and fellow students to address 
+          real-world challenges in these fields.
+        </p>
+      </div>
+      <h2 align="left">
+        Current Job:
+      </h2>
+      <div class="pstyle">
+      
+            <p align="Justify">
+              Research assistant & part time graduate assistant at North South University
+            </p>
+        
+      </div>
+      <h2 align="left">
+        Career interest:
+      </h2>
+      <div class="pstyle">
+        <ul>
+          <li>
+            <p align="Justify">
+              Teching
+            </p>
+          </li>
+          <li>
+            <p align="Justify">
+              Researching
+            </p>
+          </li>
+        </ul>
+      </div>
+
+      <h2 align="left">
+        Research Interest:
+      </h2>
+      <div class="pstyle">
+        <ul>
+          <li>
+            <p align="Justify">
+              Artificial intelligence & robotics
+            </p>
+          </li>
+        </ul>
+      </div>
+      <h2 align="left">
+      More about saif:
+    </h2>
+    
+    
+    <div class="pstyle">
+      <ul>
+        <li>
+          <p align="Justify">
+            <i class="fa fa-birthday-cake" style="font-size:24px"></i>  15 December, 1998.
+            
+          </p>
+        </li>
+        <li>
+          <p align="Justify">
+            <i class="fa fa-map-marker" style="font-size:28px"></i>    Dhaka, Bangladesh.
+          </p>
+        </li>
+        <li>
+          <p align="Justify">
+            <i class="fa fa-home" style="font-size:24px"></i> Rajshahi,  Bangladesh.
+          </p>
+        </li>
+        <li>
+          <p align="Justify">
+            <i class="fa fa-language" style="font-size:24px"></i> Bangla, and English.
+          </p>
+        </li>
+        <li>
+          <p align="Justify">
+            <i class=" fa fa-check-square" style='font-size:24px' ></i> Islam.
+          </p>
+        </li>
+        <li>
+          <p align="Justify">
+            <i class="fa fa-heart" style="font-size:24px"></i> Married.
+          </p>
+        </li>
+      </ul>
+    </div>
+    <h2 align="left">
+      Hobbies:
+    </h2>
+    <ul>
+      <li>
+        <p align="Justify">
+          Photography <i class="fa fa-camera-retro"></i>   
+        </p>
+      </li>
+      <li>
+        <p align="Justify">
+          <a href="/Book/books.html">Reading books</a> <i class="fa fa-book"></i>   
+        </p>
+      </li>
+      <li>
+        <p align="Justify">
+          <a href="/Snowman/home.html">Playing Games</a> <i class="fa fa-gamepad"></i>   
+        </p>
+      </li>
+      <li>
+        <p align="Justify">
+          <a href="/MS/movieseries.html">Watching movie and series</a> <i class=" fa fa-film"></i>   
+        </p>
+      </li>
+      <li>
+        <p align="Justify">
+          Watching and playing football <i class="fa fa-soccer-ball-o"></i>   
+        </p>
+      </li>
+      <li>
+        <p align="Justify">
+          Graphics designing <i class="fa fa-object-group"></i>   
+        </p>
+      </li>
+    </ul>
+    
+
+
+    </div>
+
+
+  </div>
+
+</body>
+
+</html>
