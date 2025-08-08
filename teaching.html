@@ -13,29 +13,31 @@
 </style>
 </head>
 <body class="w3-content" style="max-width:1600px">
-
-<!-- Sidebar/menu -->
-<nav class="w3-sidebar w3-collapse w3-animate-left" style="z-index:3;width:300px; background-color: #070F2B;" id="mySidebar"><br>
+  <!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-collapse w3-animate-left" style="z-index:3;width:300px; background: linear-gradient(to bottom, #0d0208, #042B58, #0c0532);" id="mySidebar"><br>
   <div class="w3-container">
     <a href="#" onclick="w3_close()" class="w3-hide-large w3-right w3-jumbo w3-padding w3-hover-grey" title="close menu">
       <i class="fa fa-remove"></i>
     </a>
-    <img src="/assets/img/dp.png" style="width:60%;" class="w3-round" ><br><br>
+    <img src="/assets/img/dp.png" style="width:60%; display: block; margin: auto;" class="w3-round">
+
+    <br><br>
     <h3>Saif Ahammod Khan</h3>
-    <p class="w3-text-light-grey">RA at NIRO Lab || AI & Robotics Researcher || Co-Founder of Codatron</p>
+    <p class="text-role"></p>
   </div>
   <div class="w3-bar-block">
-    <a href="/about.html" onclick="w3_close()" class="w3-bar-item w3-button w3-padding" ><i class="fa fa-user fa-fw w3-margin-right"></i>ABOUT</a> 
-    <a href="/research.html" onclick="w3_close()" class="w3-bar-item w3-button w3-padding" ><i class="fa fa-lightbulb-o fa-fw w3-margin-right"></i>RESEARCH</a> 
+    <a href="/about.html" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-user fa-fw w3-margin-right"></i>ABOUT</a>
+    <a href="/research.html" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-lightbulb-o fa-fw w3-margin-right"></i>RESEARCH </a> 
     <a href="/project.html" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-bug fa-fw w3-margin-right"></i>PROJECT </a> 
     <a href="/experience.html" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-suitcase fa-fw w3-margin-right"></i>EXPERIENCE</a> 
-    <a href="/expertise.html" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-laptop fa-fw w3-margin-right"></i>EXPERTISE</a>  
+    <a href="/expertise.html" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-laptop fa-fw w3-margin-right"></i>EXPERTISE</a> 
+    <a href="/teaching.html" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-pie-chart fa-fw w3-margin-right"></i>TEACHING</a>  
     <a href="/contact.html" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-map-marker fa-fw w3-margin-right"></i>CONTACT</a>
-    <a href="/blog.html" onclick="w3_close()" class="w3-bar-item w3-button w3-padding" style="color: #00b3ff;"><i class=" 	fa fa-font fa-fw w3-margin-right"></i>BLOG</a>
+    <a href="/blog.html" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class=" 	fa fa-font fa-fw w3-margin-right"></i>BLOG</a>
     <a href="/gallery.html" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-camera fa-fw w3-margin-right"></i>GALLERY</a>
     <a href="/assets/doc/cv.pdf" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-paperclip fa-fw w3-margin-right"></i>RESUME</a>
   </div>
-  <div class="w3-panel w3-large" style="color: #00b3ff;">
+  <div class="w3-panel w3-large">
     <!-- <a href="Codatron.com"><i class="fa fa-suitcase w3-hover-opacity"></i></a> -->
     <a href="https://www.facebook.com/SaifAhammod04/"><i class="fa fa-facebook-official w3-hover-opacity"></i></a>
     <!-- <a href=""><i class="fa fa-youtube w3-hover-opacity"></i></a> -->
@@ -442,18 +444,8 @@
 <!-- End page content -->
 </div>
 
-<script>
-// Script to open and close sidebar
-function w3_open() {
-    document.getElementById("mySidebar").style.display = "block";
-    document.getElementById("myOverlay").style.display = "block";
-}
- 
-function w3_close() {
-    document.getElementById("mySidebar").style.display = "none";
-    document.getElementById("myOverlay").style.display = "none";
-}
-</script>
 
+<!-- Link your JavaScript -->
+  <script src="main.js"></script>
 </body>
 </html>
