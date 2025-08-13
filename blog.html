@@ -1,392 +1,339 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-<title>Blog</title>
-<link rel="icon" type="image/x-icon" href="assets/img/logo.png">
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="style.css">
-<style>
-</style>
+  <title>Blog</title>
+  <link rel="icon" type="image/x-icon" href="assets/img/logo.png">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="style.css">
+  <style>
+  </style>
 </head>
+
 <body class="w3-content" style="max-width:1600px">
 
-<!-- Sidebar/menu -->
-<nav class="w3-sidebar w3-collapse w3-animate-left" style="z-index:3;width:300px; background: linear-gradient(to bottom, #0d0208, #042B58, #0c0532);" id="mySidebar"><br>
-  <div class="w3-container">
-    <a href="#" onclick="w3_close()" class="w3-hide-large w3-right w3-jumbo w3-padding w3-hover-grey" title="close menu">
-      <i class="fa fa-remove"></i>
-    </a>
-    <img src="/assets/img/dp.png" style="width:60%; display: block; margin: auto;" class="w3-round">
-
-    <br><br>
-    <h3>Saif Ahammod Khan</h3>
-    <p class="text-role"></p>
-  </div>
-  <div class="w3-bar-block">
-    <a href="/about.html" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-user fa-fw w3-margin-right"></i>ABOUT</a>
-    <a href="/research.html" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-lightbulb-o fa-fw w3-margin-right"></i>RESEARCH </a> 
-    <a href="/project.html" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-bug fa-fw w3-margin-right"></i>PROJECT </a> 
-    <a href="/experience.html" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-suitcase fa-fw w3-margin-right"></i>EXPERIENCE</a> 
-    <a href="/expertise.html" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-laptop fa-fw w3-margin-right"></i>EXPERTISE</a> 
-    <a href="/teaching.html" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-pie-chart fa-fw w3-margin-right"></i>TEACHING</a>  
-    <a href="/contact.html" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-map-marker fa-fw w3-margin-right"></i>CONTACT</a>
-    <a href="/blog.html" onclick="w3_close()" class="w3-bar-item w3-button w3-padding active"><i class=" 	fa fa-font fa-fw w3-margin-right"></i>BLOG</a>
-    <a href="/gallery.html" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-camera fa-fw w3-margin-right"></i>GALLERY</a>
-    <a href="/assets/doc/cv.pdf" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-paperclip fa-fw w3-margin-right"></i>RESUME</a>
-  </div>
-  <div class="w3-panel w3-large">
-    <!-- <a href="Codatron.com"><i class="fa fa-suitcase w3-hover-opacity"></i></a> -->
-    <a href="https://www.facebook.com/SaifAhammod04/"><i class="fa fa-facebook-official w3-hover-opacity"></i></a>
-    <!-- <a href=""><i class="fa fa-youtube w3-hover-opacity"></i></a> -->
-
-    <a href="https://github.com/saif-ahammod"><i class="fa fa-github w3-hover-opacity"></i></a>
-    <a href="https://www.linkedin.com/in/saif-ahammod/"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
-  </div>
-</nav>
-
-<!-- Overlay effect when opening sidebar on small screens -->
-<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
-
-<!-- !PAGE CONTENT! -->
-<div class="w3-main" style="margin-left:300px">
-
-  <!-- Header -->
-  <header id="portfolio">
-    <a href="/about.html"><img src="/assets/img/logo.png" style="width:65px;  border: 0px solid #00b3ff" class="w3-circle w3-right w3-margin w3-hide-large w3-hover-opacity"></a>
-    <span class="w3-button w3-hide-large w3-xxlarge w3-hover-text-grey" onclick="w3_open()"><i class="fa fa-bars"></i></span>
+  <!-- Sidebar/menu -->
+  <nav class="w3-sidebar w3-collapse w3-animate-left"
+    style="z-index:3;width:300px; background: linear-gradient(to bottom, #0d0208, #042B58, #0c0532);" id="mySidebar">
+    <br>
     <div class="w3-container">
-    <h1>Blog</h1>
-    </div>
-  </header>
- 
-
-  <div class="w3-container w3-padding-large" style="margin-bottom:32px">
-    <hr>
-    
-    <h3>My Career Stories</h3>
-    <hr>
-     <!-- First Project Grid-->
-  <div class="w3-row-padding">
-    <div class="w3-third w3-container w3-margin-bottom">
-      <img src="/assets/blog/img/coming soon.jpg" alt="Assist" style="width:100%" class="w3-hover-opacity">
-      <div class="w3-container w3-black" style="text-align: justify;">
-        <H4>A Researcher’s Journey</H4>
-        <p>This isn’t your typical blog post, consider it a daily log capturing my journey from procrastination to publication.</p>
-        <a href="#">
-          <p><button class="w3-button w3-block w3-blue">Coming Soon</button></p>
-        </a>
-      </div>
-    </div>
-
-      <!-- <div class="w3-third w3-container w3-margin-bottom">
-        <img src="/assets/blog/img/Zubuyer Kaolin.png" alt="ADOAVER" style="width:100%" class="w3-hover-opacity">
-        <div class="w3-container w3-black" style="text-align: justify;">
-          <H4>Zubuyer Kaolin</H4>
-          <p>Capturing the Orion Nebula from Dhaka showcases Zubuyer Kaolin's exceptional understanding of both the cosmos and the art of astrophotography.</p>
-          <a href="https://www.facebook.com/photo/?fbid=867158628940781&set=a.355428496780466">
-              <p><button class="w3-button w3-block w3-blue">Read Full Article</button></p>
-            </a>
-          </div>
-      </div> -->
-      <!-- <div class="w3-third w3-container w3-margin-bottom">
-        <img src="/assets/img/research/project/shouhardo.png" alt="Shouhardo" style="width:100%" class="w3-hover-opacity">
-        <div class="w3-container w3-black" style="text-align: justify;">
-            <H4>Shouhardo</H4>
-            <p>Shouhardo is a platform through which users can access advanced medical information without the assistance of third parties.</p>
-                <p><button class="w3-button w3-block w3-blue">Coming Soon...</button></p>
-          </div>
-      </div> -->
-  </div>
-  
-  <!-- Second Project Grid-->
-  <div class="w3-row-padding">
-    <!-- <div class="w3-third w3-container w3-margin-bottom">
-        <img src="/assets/img/research/project/dexbot.jpg" alt="Dex-Bot" style="width:100%" class="w3-hover-opacity">
-        <div class="w3-container w3-black" style="text-align: justify;">
-            <H4>Dex-Bot</H4>
-            <p>Details will be added later</p>
-                <p><button class="w3-button w3-block w3-blue">Coming Soon...</button></p>
-          </div>
-      </div>
-    <div class="w3-third w3-container w3-margin-bottom">
-      <img src="/assets/img/research/project/spider.jpg" alt="Spider" style="width:100%" class="w3-hover-opacity">
-      <div class="w3-container w3-black" style="text-align: justify;">
-        <H4>Spider Bot</H4>
-        <p>Details will be added later</p>
-            <p><button class="w3-button w3-block w3-blue">Coming Soon...</button></p>
-      </div>
-    </div>
-    <div class="w3-third w3-container w3-margin-bottom">
-        <img src="/assets/img/research/project/Robosoccer.jpg" alt="Robosoccer" style="width:100%" class="w3-hover-opacity">
-        <div class="w3-container w3-black" style="text-align: justify;">
-            <H4>Assist</H4>
-            <p>Details will be added later</p>
-                <p><button class="w3-button w3-block w3-blue">Coming Soon...</button></p>
-          </div>
-      </div> -->
-
-  </div>
-
-  <!-- Pagination -->
-  <!-- <div class="w3-center w3-padding-32">
-    <div class="w3-bar">
-      <a href="#" class="w3-bar-item w3-button w3-hover-black">«</a>
-      <a href="#" class="w3-bar-item w3-black w3-button">1</a>
-      <a href="#" class="w3-bar-item w3-button w3-hover-black">2</a>
-      <a href="#" class="w3-bar-item w3-button w3-hover-black">3</a>
-      <a href="#" class="w3-bar-item w3-button w3-hover-black">4</a>
-      <a href="#" class="w3-bar-item w3-button w3-hover-black">»</a>
-    </div>
-  </div> -->
-
-    <hr>
-  <!-- =============================================================================================================================================================================== -->
-    
-  <h3>Leading Lights</h3>
-  <hr>
-   <!-- First Project Grid-->
-<div class="w3-row-padding">
-  <div class="w3-third w3-container w3-margin-bottom">
-    <img src="/assets/blog/img/Alexandra Asanovna Elbakyan.png" alt="Assist" style="width:100%" class="w3-hover-opacity">
-    <div class="w3-container w3-black" style="text-align: justify;">
-      <H4>Alexandra Asanovna Elbakyan</H4>
-      <p>Exploring Sci-Hub’s revolutionary founder: hero or villain? A dive into the legal and ethical controversies surrounding her.</p>
-      <a href="https://www.facebook.com/photo?fbid=865800649076579&set=a.355428496780466">
-        <p><button class="w3-button w3-block w3-blue">Read Full Article</button></p>
+      <a href="#" onclick="w3_close()" class="w3-hide-large w3-right w3-jumbo w3-padding w3-hover-grey"
+        title="close menu">
+        <i class="fa fa-remove"></i>
       </a>
-    </div>
-  </div>
+      <img src="/assets/img/dp.png" style="width:60%; display: block; margin: auto;" class="w3-round">
 
-    <div class="w3-third w3-container w3-margin-bottom">
-      <img src="/assets/blog/img/Zubuyer Kaolin.png" alt="ADOAVER" style="width:100%" class="w3-hover-opacity">
-      <div class="w3-container w3-black" style="text-align: justify;">
-        <H4>Zubuyer Kaolin</H4>
-        <p>Capturing the Orion Nebula from Dhaka showcases Zubuyer Kaolin's 
-          exceptional understanding of both the cosmos and the art of astrophotography.
-        <br>
-        </p>
-        <a href="https://www.facebook.com/photo/?fbid=867158628940781&set=a.355428496780466">
-            <p><button class="w3-button w3-block w3-blue">Read Full Article</button></p>
-          </a>
-        </div>
+      <br><br>
+      <h3>Saif Ahammod Khan</h3>
+      <p class="text-role"></p>
     </div>
-      <!-- <div class="w3-third w3-container w3-margin-bottom">
-        <img src="/assets/img/research/project/shouhardo.png" alt="Shouhardo" style="width:100%" class="w3-hover-opacity">
-        <div class="w3-container w3-black" style="text-align: justify;">
-            <H4>Shouhardo</H4>
-            <p>Shouhardo is a platform through which users can access advanced medical information without the assistance of third parties.</p>
-                <p><button class="w3-button w3-block w3-blue">Coming Soon...</button></p>
-          </div>
-      </div> -->
-  </div>
-  
-  <!-- Second Project Grid-->
-  <div class="w3-row-padding">
-    <!-- <div class="w3-third w3-container w3-margin-bottom">
-        <img src="/assets/img/research/project/dexbot.jpg" alt="Dex-Bot" style="width:100%" class="w3-hover-opacity">
-        <div class="w3-container w3-black" style="text-align: justify;">
-            <H4>Dex-Bot</H4>
-            <p>Details will be added later</p>
-                <p><button class="w3-button w3-block w3-blue">Coming Soon...</button></p>
-          </div>
+    <div class="w3-bar-block">
+      <a href="/about.html" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i
+          class="fa fa-user fa-fw w3-margin-right"></i>ABOUT</a>
+      <a href="/research.html" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i
+          class="fa fa-lightbulb-o fa-fw w3-margin-right"></i>RESEARCH </a>
+      <a href="/project.html" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i
+          class="fa fa-bug fa-fw w3-margin-right"></i>PROJECT </a>
+      <a href="/experience.html" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i
+          class="fa fa-suitcase fa-fw w3-margin-right"></i>EXPERIENCE</a>
+      <a href="/expertise.html" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i
+          class="fa fa-laptop fa-fw w3-margin-right"></i>EXPERTISE</a>
+      <a href="/teaching.html" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i
+          class="fa fa-pie-chart fa-fw w3-margin-right"></i>TEACHING</a>
+      <a href="/contact.html" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i
+          class="fa fa-map-marker fa-fw w3-margin-right"></i>CONTACT</a>
+      <a href="/blog.html" onclick="w3_close()" class="w3-bar-item w3-button w3-padding active"><i
+          class=" 	fa fa-font fa-fw w3-margin-right"></i>BLOG</a>
+      <a href="/gallery.html" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i
+          class="fa fa-camera fa-fw w3-margin-right"></i>GALLERY</a>
+      <a href="/assets/doc/cv.pdf" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i
+          class="fa fa-paperclip fa-fw w3-margin-right"></i>RESUME</a>
+    </div>
+    <div class="w3-panel w3-large">
+      <!-- <a href="Codatron.com"><i class="fa fa-suitcase w3-hover-opacity"></i></a> -->
+      <a href="https://www.facebook.com/SaifAhammod04/"><i class="fa fa-facebook-official w3-hover-opacity"></i></a>
+      <!-- <a href=""><i class="fa fa-youtube w3-hover-opacity"></i></a> -->
+
+      <a href="https://github.com/saif-ahammod"><i class="fa fa-github w3-hover-opacity"></i></a>
+      <a href="https://www.linkedin.com/in/saif-ahammod/"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
+    </div>
+  </nav>
+
+  <!-- Overlay effect when opening sidebar on small screens -->
+  <div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer"
+    title="close side menu" id="myOverlay"></div>
+
+  <!-- !PAGE CONTENT! -->
+  <div class="w3-main" style="margin-left:300px">
+
+    <!-- Header -->
+    <header id="portfolio">
+      <a href="/about.html"><img src="/assets/img/logo.png" style="width:65px;  border: 0px solid #00b3ff"
+          class="w3-circle w3-right w3-margin w3-hide-large w3-hover-opacity"></a>
+      <span class="w3-button w3-hide-large w3-xxlarge w3-hover-text-grey" onclick="w3_open()"><i
+          class="fa fa-bars"></i></span>
+      <div class="w3-container">
+        <h1>Blog</h1>
       </div>
-    <div class="w3-third w3-container w3-margin-bottom">
-      <img src="/assets/img/research/project/spider.jpg" alt="Spider" style="width:100%" class="w3-hover-opacity">
-      <div class="w3-container w3-black" style="text-align: justify;">
-        <H4>Spider Bot</H4>
-        <p>Details will be added later</p>
-            <p><button class="w3-button w3-block w3-blue">Coming Soon...</button></p>
-      </div>
-    </div>
-    <div class="w3-third w3-container w3-margin-bottom">
-        <img src="/assets/img/research/project/Robosoccer.jpg" alt="Robosoccer" style="width:100%" class="w3-hover-opacity">
-        <div class="w3-container w3-black" style="text-align: justify;">
-            <H4>Assist</H4>
-            <p>Details will be added later</p>
-                <p><button class="w3-button w3-block w3-blue">Coming Soon...</button></p>
+    </header>
+
+
+    <div class="w3-container w3-padding-large" style="margin-bottom:32px">
+      <!-- <hr>
+
+      <h3>My Career Stories</h3>
+      <hr> -->
+      <!-- ------------------------------------? -->
+      <!-- Main content & sidebar -->
+      <div class="w3-row">
+
+        <!-- Blog entries -->
+        <div class="w3-col l4 s12">
+
+          <!-- Blog Post 1 -->
+          <div class="w3-card-4 w3-margin w3-black">
+            <img src="/assets/img/blog/post/blog1.jpg" alt="Blog Image" style="width: 100%;" class="blog-image">
+            <div class="w3-container">
+              <h3><b>রোবট বনাম স্মার্ট রোবট</b></h3>
+              <h5>ROBOTICS <span class="w3-opacity">Jul 30, 2025</span></h5>
+            </div>
+            <div class="w3-container">
+              <p>সাধারণ রোবট ও স্মার্ট রোবটের মধ্যে পার্থক্য অনেক বড়। এই ব্লগে আমরা বিশদভাবে আলোচনা করবো সাধারণ রোবট
+                কী, স্মার্ট রোবট কীভাবে আলাদা এবং কেন আমাদের স্মার্ট রোবট তৈরির দিকে এগিয়ে যাওয়া জরুরি।</p>
+              <div class="w3-row">
+                <div class="w3-col m8 s12">
+                  <p><a
+                      href="https://medium.com/@saif.ahammod/%E0%A6%B0%E0%A7%8B%E0%A6%AC%E0%A6%9F-%E0%A6%AC%E0%A6%A8%E0%A6%BE%E0%A6%AE-%E0%A6%B8%E0%A7%8D%E0%A6%AE%E0%A6%BE%E0%A6%B0%E0%A7%8D%E0%A6%9F-%E0%A6%B0%E0%A7%8B%E0%A6%AC%E0%A6%9F-523dd9072921"
+                      class="w3-button w3-padding-large"><b>READ MORE »</b></a>
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
-      </div> -->
 
-  </div>
 
-  <!-- Pagination -->
-  <!-- <div class="w3-center w3-padding-32">
-    <div class="w3-bar">
-      <a href="#" class="w3-bar-item w3-button w3-hover-black">«</a>
-      <a href="#" class="w3-bar-item w3-black w3-button">1</a>
-      <a href="#" class="w3-bar-item w3-button w3-hover-black">2</a>
-      <a href="#" class="w3-bar-item w3-button w3-hover-black">3</a>
-      <a href="#" class="w3-bar-item w3-button w3-hover-black">4</a>
-      <a href="#" class="w3-bar-item w3-button w3-hover-black">»</a>
-    </div>
-  </div> -->
+          <!-- Blog Post 3 -->
+          <!-- <div class="w3-card-4 w3-margin w3-black">
+            <img src="/assets/img/blog/post/blog1.jpg" alt="Blog Image" style="width: 100%;" class="blog-image">
+            <div class="w3-container">
+              <h3><b>একটা রোবট তৈরি করতে কোন কোন ইঞ্জিনিয়ার দরকার পরে?</b></h3>
+              <h5>ROBOTICS <span class="w3-opacity">Aug 6,2025</span></h5>
+            </div>
+            <div class="w3-container">
+              <p>একটি প্রশ্ন প্রায়ই আসে “একটি রোবট তৈরি করতে কত ধরনের ইঞ্জিনিয়ার লাগে?” এই প্রশ্নের উত্তর এককথায়
+                দেওয়া কঠিন, কারণ একটি রোবট তৈরি করা মানেই হলো বহু শাখার ইঞ্জিনিয়ারদের একত্রে কাজ করার সমন্বিত
+                প্রচেষ্টা। </p>
+              <div class="w3-row">
+                <div class="w3-col m8 s12">
+                  <p><a href="post1.html" class="w3-button w3-padding-large"><b>READ MORE »</b></a>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div> -->
 
-    <!-- <hr> -->
-    
-  <!-- =============================================================================================================================================================================== -->
-<!--     
-  <h3>AI & Robotics</h3>
-  <hr> -->
-   <!-- First Project Grid-->
-<div class="w3-row-padding">
-  <!-- <div class="w3-third w3-container w3-margin-bottom">
-    <img src="/assets/blog/img/Alexandra Asanovna Elbakyan.png" alt="Assist" style="width:100%" class="w3-hover-opacity">
-    <div class="w3-container w3-black" style="text-align: justify;">
-      <H4>Assist</H4>
-      <p>Assist is an AI based design where it can monitor elderly or disable person through a camera and detect 
-          hand gesture and send feedback to an android app named "Assist" upon the need.</p>
-          <p><button class="w3-button w3-block w3-blue">Read Full Article</button></p>
-    </div>
-  </div> -->
-
-    <!-- <div class="w3-third w3-container w3-margin-bottom">
-      <img src="/assets/blog/img/Zubuyer Kaolin.png" alt="ADOAVER" style="width:100%" class="w3-hover-opacity">
-      <div class="w3-container w3-black" style="text-align: justify;">
-          <H4>AOAVER</H4>
-          <p>AOAVER is an Exploring Robot that can avoid static obstacles and investigate places that humans cannot easily access. It is also capable of detecting a variety of obstacles.</p>
-              <p><button class="w3-button w3-block w3-blue">Read Full Article</button></p>
         </div>
-    </div> -->
-    <!-- <div class="w3-third w3-container w3-margin-bottom">
-      <img src="/assets/img/research/project/shouhardo.png" alt="Shouhardo" style="width:100%" class="w3-hover-opacity">
-      <div class="w3-container w3-black" style="text-align: justify;">
-          <H4>Shouhardo</H4>
-          <p>Shouhardo is a platform through which users can access advanced medical information without the assistance of third parties.</p>
-              <p><button class="w3-button w3-block w3-blue">Coming Soon...</button></p>
+        <div class="w3-col l4 s12">
+
+          <!-- Blog Post 2 -->
+          <div class="w3-card-4 w3-margin w3-black">
+            <img src="/assets/img/blog/post/blog2.jpg" alt="Blog Image" style="width: 100%;" class="blog-image">
+            <div class="w3-container">
+              <h3><b>একটা রোবট তৈরি করতে কোন কোন ইঞ্জিনিয়ার দরকার পরে?</b></h3>
+              <h5>ROBOTICS <span class="w3-opacity">Aug 6,2025</span></h5>
+            </div>
+            <div class="w3-container">
+              <p>একটি প্রশ্ন প্রায়ই আসে “একটি রোবট তৈরি করতে কত ধরনের ইঞ্জিনিয়ার লাগে?” এই প্রশ্নের উত্তর এককথায়
+                দেওয়া কঠিন, কারণ একটি রোবট তৈরি করা মানেই হলো বহু শাখার ইঞ্জিনিয়ারদের একত্রে কাজ করার সমন্বিত
+                প্রচেষ্টা। </p>
+              <div class="w3-row">
+                <div class="w3-col m8 s12">
+                  <p><a
+                      href="https://medium.com/@saif.ahammod/%E0%A6%8F%E0%A6%95%E0%A6%9F%E0%A6%BE-%E0%A6%B0%E0%A7%8B%E0%A6%AC%E0%A6%9F-%E0%A6%A4%E0%A7%88%E0%A6%B0%E0%A6%BF-%E0%A6%95%E0%A6%B0%E0%A6%A4%E0%A7%87-%E0%A6%95%E0%A7%8B%E0%A6%A8-%E0%A6%95%E0%A7%8B%E0%A6%A8-%E0%A6%87%E0%A6%9E%E0%A7%8D%E0%A6%9C%E0%A6%BF%E0%A6%A8%E0%A6%BF%E0%A6%AF%E0%A6%BC%E0%A6%BE%E0%A6%B0-%E0%A6%A6%E0%A6%B0%E0%A6%95%E0%A6%BE%E0%A6%B0-%E0%A6%AA%E0%A6%B0%E0%A7%87-b7b711a79c50"
+                      class="w3-button w3-padding-large"><b>READ MORE »</b></a>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+          <!-- Blog Post 4 -->
+          <!-- <div class="w3-card-4 w3-margin w3-black">
+            <img src="/assets/img/blog/post/blog1.jpg" alt="Blog Image" style="width: 100%;" class="blog-image">
+            <div class="w3-container">
+              <h3><b>একটা রোবট তৈরি করতে কোন কোন ইঞ্জিনিয়ার দরকার পরে?</b></h3>
+              <h5>ROBOTICS <span class="w3-opacity">Aug 6,2025</span></h5>
+            </div>
+            <div class="w3-container">
+              <p>একটি প্রশ্ন প্রায়ই আসে “একটি রোবট তৈরি করতে কত ধরনের ইঞ্জিনিয়ার লাগে?” এই প্রশ্নের উত্তর এককথায়
+                দেওয়া কঠিন, কারণ একটি রোবট তৈরি করা মানেই হলো বহু শাখার ইঞ্জিনিয়ারদের একত্রে কাজ করার সমন্বিত
+                প্রচেষ্টা। </p>
+              <div class="w3-row">
+                <div class="w3-col m8 s12">
+                  <p><a href="post1.html" class="w3-button w3-padding-large"><b>READ MORE »</b></a>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>-->
+
         </div>
-    </div> -->
-</div>
 
-<!-- Second Project Grid-->
-<div class="w3-row-padding">
-  <!-- <div class="w3-third w3-container w3-margin-bottom">
-      <img src="/assets/img/research/project/dexbot.jpg" alt="Dex-Bot" style="width:100%" class="w3-hover-opacity">
-      <div class="w3-container w3-black" style="text-align: justify;">
-          <H4>Dex-Bot</H4>
-          <p>Details will be added later</p>
-              <p><button class="w3-button w3-block w3-blue">Coming Soon...</button></p>
+        <!-- Sidebar -->
+        <div class="w3-col l4">
+
+          <!-- About -->
+          <div class="w3-card w3-margin w3-margin-top">
+            <img src="/assets/img/blog/blogdp.jpg" style="width:100%">
+            <div class="w3-container w3-black">
+              <h4><b>About Me</b></h4>
+              <p>I am a researcher passionate about Artificial Intelligence and Robotics. I share insights, tutorials,
+                and teaching content to inspire and educate others. Driven by a vision for a smarter, more creative
+                Bangladesh, I aim to contribute meaningfully to its technological evolution.</p>
+            </div>
+          </div>
+          <hr>
+
+          <!-- Recent Posts -->
+          <div class="w3-card w3-margin">
+            <div class="w3-container w3-padding">
+              <h4>Recent Posts</h4>
+            </div>
+            <ul class="w3-ul w3-hoverable w3-black">
+              <li class="w3-padding-16">
+                <img src="/assets/img/blog/post/blog1.jpg" alt="Post" class="w3-left w3-margin-right"
+                  style="width:50px">
+                <span class="w3-large">Post 1</span><br>
+                <span>Jul 30, 2025</span>
+              </li>
+              <li class="w3-padding-16">
+                <img src="/assets/img/blog/post/blog2.jpg" alt="Post" class="w3-left w3-margin-right"
+                  style="width:50px">
+                <span class="w3-large">Post 2</span><br>
+                <span>Aug 6, 2025</span>
+              </li>
+            </ul>
+          </div>
+          <hr>
+
+          <!-- Categories -->
+          <div class="w3-card w3-margin">
+            <div class="w3-container w3-padding">
+              <h4>Categories</h4>
+            </div>
+            <div class="w3-container w3-black">
+              <p><span class="w3-tag w3-light-grey w3-small w3-margin-bottom">AI</span> <span
+                  class="w3-tag w3-light-grey w3-small w3-margin-bottom">Robotics</span> <span
+                  class="w3-tag w3-light-grey w3-small w3-margin-bottom">Tech</span></p>
+            </div>
+          </div>
+
         </div>
-    </div>
-  <div class="w3-third w3-container w3-margin-bottom">
-    <img src="/assets/img/research/project/spider.jpg" alt="Spider" style="width:100%" class="w3-hover-opacity">
-    <div class="w3-container w3-black" style="text-align: justify;">
-      <H4>Spider Bot</H4>
-      <p>Details will be added later</p>
-          <p><button class="w3-button w3-block w3-blue">Coming Soon...</button></p>
-    </div>
-  </div>
-  <div class="w3-third w3-container w3-margin-bottom">
-      <img src="/assets/img/research/project/Robosoccer.jpg" alt="Robosoccer" style="width:100%" class="w3-hover-opacity">
-      <div class="w3-container w3-black" style="text-align: justify;">
-          <H4>Assist</H4>
-          <p>Details will be added later</p>
-              <p><button class="w3-button w3-block w3-blue">Coming Soon...</button></p>
+
+      </div>
+      <!-- ------------------------------------? -->
+
+
+      <!-- =============================================================================================================================================================================== -->
+
+
+      <hr>
+
+
+      <!-- Footer -->
+      <footer class="w3-container w3-padding-32" style="background-color: #070F2B;">
+        <div class="w3-row-padding">
+          <div class="w3-third">
+            <h3>codatron.com</h3>
+            <p style="text-align: justify;">
+              Codatron is a research-based tech initiative committed to solving real-world problems using
+              Artificial Intelligence and Robotics. We focus on developing innovative tech solutions,
+              offering project and product development support, and delivering hands-on training for students
+              and professionals. Codatron also engages in knowledge sharing through blogs, vlogs, and newsletters.
+              Whether you're looking to learn, build, or innovate, we’re here to guide you with research,
+              mentorship, and cutting-edge technology.</p>
+            <p style="text-align: justify;"><b style="color:bisque">Email: codatron.bd@gmail.com</b></p>
+            <a href="https://codatron.com/"><b style="color:bisque;">OUR WEBSITE>></b></a>
+          </div>
+
+          <div class="w3-third" style="color: #E1F7F5;">
+            <h3>Socal Platform</h3>
+            <ul class="w3-ul w3-hoverable">
+              <li class="w3-padding-16">
+                <img src="/assets/img/icon/youtube.png" class="w3-left w3-margin-right"
+                  style="width:50px; border: 2px solid #00b3ff;">
+                <span class="w3-large">Codatron Youtube</span><br>
+                <span><a href="https://www.youtube.com/@Codatron">Visit>>></a></span>
+              </li>
+              <li class="w3-padding-16">
+                <img src="/assets/img/icon/facebook.png" class="w3-left w3-margin-right"
+                  style="width:50px ; border: 2px solid #00b3ff;">
+                <span class="w3-large"> Codatron Facebook</span><br>
+                <span><a href="https://www.facebook.com/codatronbd/">Visit>>></a></span>
+              </li>
+              <li class="w3-padding-16">
+                <img src="/assets/img/icon/linkedin.png" class="w3-left w3-margin-right"
+                  style="width:50px ; border: 2px solid #00b3ff;">
+                <span class="w3-large">Codatron Linkedin</span><br>
+                <span><a href="https://www.linkedin.com/company/codatron">Visit>>></a></span>
+              </li>
+              <li class="w3-padding-16">
+                <img src="/assets/img/icon/communication.png" class="w3-left w3-margin-right"
+                  style="width:50px ; border: 2px solid #00b3ff;">
+                <span class="w3-large">Codatron Discord</span><br>
+                <span><a href="https://discord.gg/NmGBxj6H">Visit>>></a></span>
+              </li>
+              <li class="w3-padding-16">
+                <img src="/assets/img/icon/community.png" class="w3-left w3-margin-right"
+                  style="width:50px ; border: 2px solid #00b3ff;">
+                <span class="w3-large">AI & Robotics Community</span><br>
+                <span><a href="https://www.facebook.com/groups/arcbangladesh">Visit>>></a></span>
+              </li>
+            </ul>
+          </div>
+
+
+          <div class="w3-third">
+            <h3>POPULAR TAGS</h3>
+            <p>
+              <span class="w3-tag w3-white w3-margin-bottom">Research</span>
+              <span class="w3-tag w3-black w3-small w3-margin-bottom">AI</span>
+              <span class="w3-tag w3-black w3-small w3-margin-bottom">Robotics</span>
+              <span class="w3-tag w3-black w3-small w3-margin-bottom">Machine Learning</span>
+              <span class="w3-tag w3-black w3-small w3-margin-bottom">JAVA</span>
+              <span class="w3-tag w3-black w3-small w3-margin-bottom">DEEP LEARNING</span>
+              <span class="w3-tag w3-black w3-small w3-margin-bottom">C</span>
+              <span class="w3-tag w3-black w3-small w3-margin-bottom">C++</span>
+              <span class="w3-tag w3-black w3-small w3-margin-bottom">Ideas</span>
+              <span class="w3-tag w3-black w3-small w3-margin-bottom">Algorithm</span>
+              <span class="w3-tag w3-black w3-small w3-margin-bottom">NSU</span>
+              <span class="w3-tag w3-black w3-small w3-margin-bottom">Programming</span>
+              <span class="w3-tag w3-black w3-small w3-margin-bottom">Invention</span>
+              <span class="w3-tag w3-black w3-small w3-margin-bottom">Games</span>
+              <span class="w3-tag w3-black w3-small w3-margin-bottom">Rajshahi</span>
+              <span class="w3-tag w3-black w3-small w3-margin-bottom">Dhaka</span>
+              <span class="w3-tag w3-small w3-margin-bottom">Bangladesh</span>
+            </p>
+          </div>
+
         </div>
-    </div> -->
+      </footer>
 
-</div>
+      <div class="w3-black w3-center w3-padding-24">All right reserved</div>
 
-<!-- Pagination -->
-<!-- <div class="w3-center w3-padding-32">
-  <div class="w3-bar">
-    <a href="#" class="w3-bar-item w3-button w3-hover-black">«</a>
-    <a href="#" class="w3-bar-item w3-black w3-button">1</a>
-    <a href="#" class="w3-bar-item w3-button w3-hover-black">2</a>
-    <a href="#" class="w3-bar-item w3-button w3-hover-black">3</a>
-    <a href="#" class="w3-bar-item w3-button w3-hover-black">4</a>
-    <a href="#" class="w3-bar-item w3-button w3-hover-black">»</a>
-  </div>
-</div> -->
-
-  <hr>
-  
-
-  <!-- Footer -->
-  <footer class="w3-container w3-padding-32" style="background-color: #070F2B;">
-  <div class="w3-row-padding">
-    <div class="w3-third">
-      <h3>codatron.com</h3>
-      <p style="text-align: justify;">
-        Codatron is a research-based tech initiative committed to solving real-world problems using 
-        Artificial Intelligence and Robotics. We focus on developing innovative tech solutions, 
-        offering project and product development support, and delivering hands-on training for students 
-        and professionals. Codatron also engages in knowledge sharing through blogs, vlogs, and newsletters. 
-        Whether you're looking to learn, build, or innovate, we’re here to guide you with research, 
-        mentorship, and cutting-edge technology.</p>
-          <p style="text-align: justify;"><b style="color:bisque">Email: codatron.bd@gmail.com</b></p>
-          <a href="https://codatron.com/"><b style="color:bisque;">OUR WEBSITE>></b></a>
-    </div>
-  
-    <div class="w3-third" style="color: #E1F7F5;">
-      <h3>Socal Platform</h3>
-      <ul class="w3-ul w3-hoverable">
-        <li class="w3-padding-16">
-          <img src="/assets/img/icon/youtube.png" class="w3-left w3-margin-right" style="width:50px; border: 2px solid #00b3ff;">
-          <span class="w3-large">Codatron Youtube</span><br>
-          <span><a href="https://www.youtube.com/@Codatron">Visit>>></a></span>
-        </li>
-        <li class="w3-padding-16">
-          <img src="/assets/img/icon/facebook.png" class="w3-left w3-margin-right" style="width:50px ; border: 2px solid #00b3ff;">
-          <span class="w3-large"> Codatron Facebook</span><br>
-          <span><a href="https://www.facebook.com/codatronbd/">Visit>>></a></span>
-        </li> 
-        <li class="w3-padding-16">
-          <img src="/assets/img/icon/linkedin.png" class="w3-left w3-margin-right" style="width:50px ; border: 2px solid #00b3ff;">
-          <span class="w3-large">Codatron Linkedin</span><br>
-          <span><a href="https://www.linkedin.com/company/codatron">Visit>>></a></span>
-        </li>
-        <li class="w3-padding-16">
-          <img src="/assets/img/icon/communication.png" class="w3-left w3-margin-right" style="width:50px ; border: 2px solid #00b3ff;">
-          <span class="w3-large">Codatron Discord</span><br>
-          <span><a href="https://discord.gg/NmGBxj6H">Visit>>></a></span>
-        </li> 
-        <li class="w3-padding-16">
-          <img src="/assets/img/icon/community.png" class="w3-left w3-margin-right" style="width:50px ; border: 2px solid #00b3ff;">
-          <span class="w3-large">AI & Robotics Community</span><br>
-          <span><a href="https://www.facebook.com/groups/arcbangladesh">Visit>>></a></span>
-        </li>
-      </ul>
+      <!-- End page content -->
     </div>
 
-
-    <div class="w3-third">
-      <h3>POPULAR TAGS</h3>
-      <p>
-        <span class="w3-tag w3-white w3-margin-bottom">Research</span> 
-        <span class="w3-tag w3-black w3-small w3-margin-bottom">AI</span> 
-        <span class="w3-tag w3-black w3-small w3-margin-bottom">Robotics</span>
-        <span class="w3-tag w3-black w3-small w3-margin-bottom">Machine Learning</span> 
-        <span class="w3-tag w3-black w3-small w3-margin-bottom">JAVA</span> 
-        <span class="w3-tag w3-black w3-small w3-margin-bottom">DEEP LEARNING</span>
-        <span class="w3-tag w3-black w3-small w3-margin-bottom">C</span> 
-        <span class="w3-tag w3-black w3-small w3-margin-bottom">C++</span> 
-        <span class="w3-tag w3-black w3-small w3-margin-bottom">Ideas</span> 
-        <span class="w3-tag w3-black w3-small w3-margin-bottom">Algorithm</span>
-        <span class="w3-tag w3-black w3-small w3-margin-bottom">NSU</span> 
-        <span class="w3-tag w3-black w3-small w3-margin-bottom">Programming</span> 
-        <span class="w3-tag w3-black w3-small w3-margin-bottom">Invention</span>
-        <span class="w3-tag w3-black w3-small w3-margin-bottom">Games</span> 
-        <span class="w3-tag w3-black w3-small w3-margin-bottom">Rajshahi</span>
-        <span class="w3-tag w3-black w3-small w3-margin-bottom">Dhaka</span>
-        <span class="w3-tag w3-small w3-margin-bottom">Bangladesh</span>
-      </p>
-    </div>
-
-  </div>
-  </footer>
-  
-  <div class="w3-black w3-center w3-padding-24">All right reserved</div>
-
-<!-- End page content -->
-</div>
-
-<!-- Link your JavaScript -->
-  <script src="main.js"></script>
+    <!-- Link your JavaScript -->
+    <script src="main.js"></script>
 
 
 </body>
+
 </html>

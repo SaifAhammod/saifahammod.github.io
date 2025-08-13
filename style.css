@@ -70,7 +70,18 @@
       background-color: var(--hoverbgColor) !important;
       color: var(--boldColor) !important;
     }
-
+  /* Blog Button*/
+  a.w3-button.w3-padding-large {
+      background-color: var(--backgroundColor1) !important;
+      color: var(--textColor) !important;
+      border: var(--boderColor) solid 1px !important;
+      color: var(--textColor) !important;
+    }  
+  a.w3-button.w3-padding-large:hover {
+      background-color: var(--hoverbgColor) !important;
+      border: var(--boldColor) solid 1px;
+      color: var(--boldColor) !important;
+    }
     /* Timeline */
     /* The actual timeline (the vertical ruler) */
     .timeline {
