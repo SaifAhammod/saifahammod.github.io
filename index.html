@@ -105,13 +105,8 @@
       margin-top: 50px;
       font-size: 50px;
       font-family: sans-serif;
-      -webkit-text-fill-color: #9290C3;
+      color: var(--textColor);
       letter-spacing: .4em;
-    }
-
-    h3 {
-      color: #ffffff;
-      font-size: 30px;
     }
 
     .button {
@@ -137,15 +132,15 @@
       overflow: auto;
       padding: 20px;
       font-family: sans-serif;
-      color: #9290C3;
-      border: 1px solid #9290C3;
+      color: var(--textColor);
+      border: 3px solid var(--textColor);
       letter-spacing: .2em;
     }
 
     .button1:hover {
-      color: #00b3ff;
-      background-color: #1B1A55;
-      border: 3px solid #00b3ff;
+      color: var(--boldColor);
+      background-color: var(--hoverbgColor);
+      border: 3px solid var(--boldColor);
       font-size: large;
     }
 
@@ -206,37 +201,11 @@
   </div>
   <div class="particles" id="particles"></div>
 
-  <script>
-    var particles = document.getElementById("particles");
 
-    function main() {
-      var np = document.documentElement.clientWidth / 29;
-      particles.innerHTML = "";
-      for (var i = 0; i < np; i++) {
-        var w = document.documentElement.clientWidth;
-        var h = document.documentElement.clientHeight;
-        var rndw = Math.floor(Math.random() * w) + 1;
-        var rndh = Math.floor(Math.random() * h) + 1;
-        var widthpt = Math.floor(Math.random() * 8) + 3;
-        var opty = Math.floor(Math.random() * 5) + 2;
-        var anima = Math.floor(Math.random() * 12) + 8;
+  
+<!-- Link your JavaScript -->
+    <script src="main.js"></script>
 
-        var div = document.createElement("div");
-        div.classList.add("particle");
-        div.style.marginLeft = rndw + "px";
-        div.style.marginTop = rndh + "px";
-        div.style.width = widthpt + "px";
-        div.style.height = widthpt + "px";
-        div.style.background = "white";
-        div.style.opacity = opty;
-        div.style.animation = "move " + anima + "s ease-in infinite ";
-        particles.appendChild(div);
-      }
-    }
-
-    window.addEventListener("resize", main);
-    window.addEventListener("load", main);
-  </script>
 </body>
 
 </html>
