@@ -3,7 +3,42 @@
 // Define all your global texts here
 const globalTexts = {
     role: "RA at NIRO Lab || AI & Robotics Researcher || Co-Founder of Codatron",
-    footerNote: "© 2025 All rights reserved.",
+    //Footer
+    footerRightsNote: "© 2025 All rights reserved.",
+    //Column 1
+    footerCol1Title: "What is Codatron?",
+    footerCol1Desc: "Codatron is a research-based tech initiative committed to solving real-world problems using Artificial Intelligence and Robotics. We focus on developing innovative tech solutions, offering project and product development support, and delivering hands-on training for students and professionals. Codatron also engages in knowledge sharing through blogs, vlogs, and newsletters. Whether you're looking to learn, build, or innovate, we’re here to guide you with research, mentorship, and cutting-edge technology.",
+    footerCol1Hightext: "Email: codatron.bd@gmail.com",
+    footerCol1Link: "OUR WEBSITE>>",
+    //Column 2
+    footerCol2Title: "Important Link",
+    //Column 3
+    footerCol3Title: "Popular Tags",
+    footerTag1: "RESEARCH",
+    footerTag2: "ROBOTICS",
+    footerTag3: "ARTIFICIAL INTELLIGENCE",
+    footerTag4: "DEEP LEARNING",
+    footerTag5: "MACHINE LEARNING",
+    footerTag6: "COMPUTER VISION",
+    footerTag7: "PHYSICAL AI",
+    footerTag8: "Bangladesh",
+    footerTag9: "",
+    footerTag10: "",
+    footerTag11: "",
+    footerTag12: "",
+    footerTag13: "",
+    footerTag14: "",
+    footerTag15: "",
+    footerTag16: "",
+    footerTag17: "",
+    footerTag18: "",
+    footerTag19: "",
+    footerTag20: "",
+    footerQuoteTitle:"REMEMBER ONE THING",
+    footerQuote: "The best way to create value in the 21st century is to connect Creativity with Technology.",
+    footerQuoteCredit:"- Steve Jobs",
+    
+
 };
 
 // Function to apply text to all matching class elements
@@ -60,12 +95,12 @@ document.addEventListener("DOMContentLoaded", () => {
 //--------------------------------------------------------------------
 // Nav Bar active or not
 document.addEventListener("DOMContentLoaded", () => {
-  const currentPage = window.location.pathname; // e.g., "/about.html"
-  
-  document.querySelectorAll(".w3-bar-item").forEach(link => {
-    if (link.getAttribute("href") === currentPage) {
-      link.classList.add("active");
-    }
-  });
+    const currentPage = window.location.pathname; // e.g., "/about.html"
+
+    document.querySelectorAll(".w3-bar-item").forEach(link => {
+        if (link.getAttribute("href") === currentPage) {
+            link.classList.add("active");
+        }
+    });
 });
 //--------------------------------------------------------------------

@@ -44,6 +44,10 @@
     .highlight {
       color: var(--highlightColor)
     }
+    .w3-padding-16.footer:hover {
+      background-color: var(--hoverbgColor) !important;
+      color: var(--boldColor) !important;
+    }
 
     /* Special Constent Text as global value */
     .text-role {
