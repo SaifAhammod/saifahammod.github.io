@@ -86,6 +86,18 @@
       border: var(--boldColor) solid 1px;
       color: var(--boldColor) !important;
     }
+    /* Contact Send Message Button*/
+  button.w3-button.w3-margin-bottom.sendmes {
+      background-color: var(--boldColor) !important;
+      color: var(--hoverbgColor) !important;
+      border: var(--hoverbgColor) solid 1px !important;
+    }  
+  button.w3-button.w3-margin-bottom.sendmes:hover {
+      background-color: var(--hoverbgColor) !important;
+      border: var(--boldColor) solid 1px !important;
+      color: var(--boldColor) !important;
+
+    }
     /* Timeline */
     /* The actual timeline (the vertical ruler) */
     .timeline {
