@@ -2,9 +2,11 @@
 <html>
 
 <head>
-  <title>Saif Ahammod </title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Saif Ahammod</title>
   <link rel="icon" type="image/x-icon" href="assets/img/logo.png">
-  
+
   <style>
     *,
     *::before,
@@ -12,6 +14,10 @@
       margin: 0;
       padding: 0;
       box-sizing: border-box;
+    }
+
+    body {
+      overflow-x: hidden;
     }
 
     .blur,
@@ -41,6 +47,9 @@
       position: absolute;
       z-index: 100;
       text-align: center;
+      overflow-y: auto;
+      overflow-x: hidden;
+      padding: 20px;
     }
 
     .title {
@@ -102,11 +111,12 @@
     }
 
     h1 {
-      margin-top: 50px;
-      font-size: 50px;
+      font-size: 20px;
       font-family: sans-serif;
       color: var(--textColor);
       letter-spacing: .4em;
+      word-wrap: break-word;
+      padding: 0 10px;
     }
 
     .button {
@@ -144,43 +154,156 @@
       font-size: large;
     }
 
-    @media (max-width: 768px) {
+    /* Container */
+    .container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      padding: 5px;
+      gap: 20px;
+      max-width: 1400px;
+      width: 100%;
+    }
+
+    .container div {
+      border: none;
+      color: white;
+      text-align: center;
+      font-size: 16px;
+      font-family: Arial, sans-serif;
+      margin-top: 20px;
+      padding: 10px;
+      min-height: 300px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    /* Tablet Styles */
+    @media (max-width: 1024px) {
+      .container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+      }
+
       h1 {
-        font-size: 30px;
+        font-size: 18px;
+        letter-spacing: .3em;
+      }
+
+      img {
+        margin: 30px auto 80px;
+      }
+    }
+
+    /* Mobile Landscape & Small Tablet */
+    @media (max-width: 768px) {
+      .main {
+        padding: 15px;
+      }
+
+      .container {
+        grid-template-columns: 1fr;
+        gap: 15px;
+      }
+
+      h1 {
+        font-size: 16px;
         letter-spacing: .2em;
       }
 
       .button1 {
+        height: 60px;
+        width: 180px;
+        font-size: 15px;
+        padding: 15px;
+      }
+
+      .button1:hover {
+        height: 60px;
+        width: 180px;
+        font-size: 15px;
+      }
+
+      img {
+        margin: 25px auto 60px;
+        padding: 15px;
+      }
+
+      .container div {
+        min-height: 250px;
+      }
+    }
+
+    /* Mobile Portrait */
+    @media (max-width: 480px) {
+      .main {
+        padding: 10px;
+        align-items: flex-start;
+        padding-top: 30px;
+      }
+
+      .container {
+        gap: 12px;
+      }
+
+      h1 {
+        font-size: 14px;
+        letter-spacing: .15em;
+        margin-bottom: 10px;
+      }
+
+      .button1 {
         height: 50px;
         width: 150px;
-        font-size: 14px;
-        padding: 10px;
+        font-size: 13px;
+        padding: 12px;
+        letter-spacing: .15em;
       }
 
       .button1:hover {
         height: 50px;
         width: 150px;
-        font-size: 14px;
+        font-size: 13px;
+      }
+
+      img {
+        margin: 20px auto 40px;
+        padding: 10px;
+      }
+
+      .container div {
+        min-height: 220px;
+        padding: 8px;
+        margin-top: 10px;
       }
     }
 
-    @media (max-width: 480px) {
+    /* Extra Small Devices */
+    @media (max-width: 360px) {
       h1 {
-        font-size: 24px;
+        font-size: 12px;
         letter-spacing: .1em;
       }
 
       .button1 {
-        height: 40px;
-        width: 120px;
+        height: 45px;
+        width: 130px;
         font-size: 12px;
-        padding: 5px;
+        padding: 10px;
       }
 
       .button1:hover {
-        height: 40px;
-        width: 120px;
+        height: 45px;
+        width: 130px;
         font-size: 12px;
+      }
+
+      img {
+        margin: 15px auto 30px;
+      }
+
+      .container div {
+        min-height: 200px;
       }
     }
   </style>
@@ -190,21 +313,49 @@
   <div class="blur"></div>
   <div class="main" id="main">
     <div align="center">
-      <img src="assets/img/homelogo.png" alt="Saif Ahammod" style="width:20%;">
-      <h1>
-        MD SAIF AHAMMOD KHAN
-        <br><br>
-      </h1>
-      <a href="/about.html"><button class="button button1">PORTFOLIO</button></a>
-      <br>
+      <div class="container">
+        <div style="background-color: rgba(4, 43, 88, 0.3);">
+          <div>
+            <img src="assets/img/homelogo.png" alt="Saif Ahammod"
+              style="width:100%; background-color: rgba(0, 0, 0, 0.7); padding: 20px;">
+            <h1>SAIF AHAMMOD KHAN</h1>
+          </div>
+          <a href="/about.html"><button class="button button1">VISIT</button></a>
+        </div>
+
+        <div style="background-color: rgba(255, 176, 30, 0.3);">
+          <div>
+            <img src="assets/img/Codatron Logo.png" alt="Codatron"
+              style="width:100%; background-color: rgba(0, 0, 0, 0.7); padding: 20px;">
+            <h1>CODATRON</h1>
+          </div>
+          <a href="https://codatron.com/"><button class="button button1">VISIT</button></a>
+        </div>
+
+        <div style="background-color: rgba(30, 255, 79, 0.3);">
+          <div>
+            <img src="assets/img/homelogo.png" alt="Green Hardware"
+              style="width:100%; background-color: rgba(0, 0, 0, 0.7); padding: 20px;">
+            <h1>GREEN HARDWARE & MACHINERIES</h1>
+          </div>
+          <a href=""><button class="button button1">Coming Soon</button></a>
+        </div>
+
+        <div style="background-color: rgba(4, 48, 0, 0.3);">
+          <div>
+            <img src="assets/img/homelogo.png" alt="Green Enterprise"
+              style="width:100%; background-color: rgba(0, 0, 0, 0.7); padding: 20px;">
+            <h1>GREEN ENTERPRISE</h1>
+          </div>
+          <a href=""><button class="button button1">Coming Soon</button></a>
+        </div>
+      </div>
     </div>
   </div>
   <div class="particles" id="particles"></div>
 
-
-  
-<!-- Link your JavaScript -->
-    <script src="main.js"></script>
+  <!-- Link your JavaScript -->
+  <script src="main.js"></script>
 
 </body>
 

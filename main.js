@@ -2,7 +2,7 @@
 //--------------------------------------------------------------------
 // Define all your global texts here
 const globalTexts = {
-    role: "RA at NIRO Lab || AI & Robotics Researcher || Co-Founder of Codatron",
+    role: "Co-Founder of Codatron || AI & Robotics Researcher || ",
     //Footer
     footerRightsNote: "© 2025 All rights reserved.",
     //Column 1
