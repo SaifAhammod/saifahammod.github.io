@@ -65,19 +65,19 @@ function w3_close() {
 //--------------------------------------------------------------------
 // Define your color variables
 const colorPalette = {
-    textColor: "#EBFEF4",
+    textColor: "#202940",
 
-    h1Color: "#00b3ff",
+    h1Color: "#202940",
 
-    boldColor: "#77ECF2",
+    boldColor: "#202940",
 
-    linkColor: "#ffe4c4",
+    linkColor: "#fff7c5",
 
-    boderColor: "#ffffff",
+    boderColor: "#202940",
 
-    hoverbgColor: "#022c43",
+    hoverbgColor: "#fff7c5",
 
-    backgroundColor1: "#070F2B",
+    backgroundColor1: "#fff7c5",
 
     highlightColor: "#00b3ff",
 
