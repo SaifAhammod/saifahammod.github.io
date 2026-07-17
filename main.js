@@ -2,26 +2,28 @@
 //--------------------------------------------------------------------
 // Define all your global texts here
 const globalTexts = {
-    role: "Co-Founder of Codatron || AI & Robotics Researcher || ",
+    role: "Engineer | Roboticist | Businessman",
     //Footer
-    footerRightsNote: "© 2025 All rights reserved.",
+    footerRightsNote: "© 2026 Saif. All rights reserved.",
     //Column 1
     footerCol1Title: "What is Codatron?",
-    footerCol1Desc: "Codatron is a research-based tech initiative committed to solving real-world problems using Artificial Intelligence and Robotics. We focus on developing innovative tech solutions, offering project and product development support, and delivering hands-on training for students and professionals. Codatron also engages in knowledge sharing through blogs, vlogs, and newsletters. Whether you're looking to learn, build, or innovate, we’re here to guide you with research, mentorship, and cutting-edge technology.",
-    footerCol1Hightext: "Email: codatron.bd@gmail.com",
-    footerCol1Link: "OUR WEBSITE>>",
+    footerCol1Desc: "Codatron is a research-driven tech initiative dedicated to solving real-world problems through Artificial Intelligence, Robotics and Automation. We support project and product development, deliver hands-on training for students and professionals, and share knowledge through blogs, vlogs, and communities. Whether you're looking to learn, build, or innovate, Codatron offers the research, mentorship, and technology to help you get there.",
+    footerCol1Hightext1: "Mail: codatron.bd@gmail.com",
+    footerCol1Hightext2: "Call:+8801705225969 ",
+    footerCol1Hightext3: "Text:+8801521419974 (Whatsapp)",
+    footerCol1Link: "Visit: codatron.com",
     //Column 2
     footerCol2Title: "Important Link",
     //Column 3
-    footerCol3Title: "Popular Tags",
-    footerTag1: "RESEARCH",
-    footerTag2: "ROBOTICS",
-    footerTag3: "ARTIFICIAL INTELLIGENCE",
-    footerTag4: "DEEP LEARNING",
-    footerTag5: "MACHINE LEARNING",
-    footerTag6: "COMPUTER VISION",
-    footerTag7: "PHYSICAL AI",
-    footerTag8: "Bangladesh",
+    footerCol3Title: "MY PLATFORMS",
+    footerTag1: "CODATRON.COM",
+    footerTag2: "CREATOR Lab",
+    footerTag3: "AI & ROBOTICS COMMUNITY BANGLADESH",
+    footerTag4: "GREEN HARDWARE & MACHINERIES RAJSHAHI",
+    footerTag5: "GREEN ENTERPRISE RAJSHAHI",
+    footerTag6: "NSU IGNITE",
+    footerTag7: "",
+    footerTag8: "",
     footerTag9: "",
     footerTag10: "",
     footerTag11: "",
@@ -65,23 +67,9 @@ function w3_close() {
 //--------------------------------------------------------------------
 // Define your color variables
 const colorPalette = {
-    textColor: "#202940",
+    lightColor: "#fff7c5",
+    darkColor: "#202940",
 
-    h1Color: "#202940",
-
-    boldColor: "#202940",
-
-    linkColor: "#fff7c5",
-
-    boderColor: "#202940",
-
-    hoverbgColor: "#fff7c5",
-
-    backgroundColor1: "#fff7c5",
-
-    highlightColor: "#00b3ff",
-
-    accent: "#e74c3c"
 };
 
 // Apply them to :root as CSS variables

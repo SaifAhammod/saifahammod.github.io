@@ -1,13 +1,21 @@
     img {
-      border: 3px solid var(--boderColor);
+      border: 3px solid var(--darkColor);
     }
+hr{
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 3px solid var(--darkColor);
+  margin: 1em 0;
+  padding: 0;
 
+}
     body {
-      background-color: #fff7c5;
+      background-color: var(--lightColor);
       font-family: "IBM Plex Mono", monospace;
       font-size: large;
 
-      color: var(--textColor);
+      color: var(--darkColor);
     }
 
     b {
@@ -17,7 +25,6 @@
     h1 {
       font-family: 'Orbitron', sans-serif;
 
-      color: var(--h1Color);
     }
 
     a {
@@ -26,32 +33,40 @@
       font-weight: bold;
     }
 
-    h2,
     h3,
+    h5{
+      font-family: "IBM Plex Mono", monospace;
+      color: var(--lightColor);
+    }
+    h2,
     h4,
-    h5,
     h6 {
       font-family: "IBM Plex Mono", monospace;
-      color: var(--textColor);
+      color: var(--darkColor);
     }
 
     p {
       font-family: "IBM Plex Mono", monospace;
       font-size: large;
-      color: var(--textColor);
+      color: var(--darkColor);
 
     }
     .highlight {
       color: var(--highlightColor)
     }
     .w3-padding-16.footer:hover {
-      background-color: var(--hoverbgColor) !important;
-      color: var(--boldColor) !important;
+      background-color: var(--darkColor) !important;
+      color: var(--lightColor) !important;
+    }
+
+    .w3-padding-16.footer {
+      background-color: var(--lightColor) !important;
+      color: var(--darkColor) !important;
     }
 
     /* Special Constent Text as global value */
     .text-role {
-      color: var(--linkColor);
+      color: var(--lightColor);
       font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
       font-size: medium;
 
@@ -66,13 +81,16 @@
 
     /* Navbar */
     #mySidebar a.w3-bar-item.w3-button:hover {
-      background-color: var(--hoverbgColor) !important;
-      color: var(--boldColor) !important;
+      background-color: var(--lightColor) !important;
+      color: var(--darkColor) !important;
     }
 
     .w3-bar-item.active {
-      background-color: var(--hoverbgColor) !important;
-      color: var(--boldColor) !important;
+      background-color: var(--lightColor) !important;
+      color: var(--darkColor) !important;
+    }
+    .w3-bar-item {
+      color: var(--lightColor) !important;
     }
   /* Blog Button*/
   a.w3-button.w3-padding-large {
@@ -111,7 +129,7 @@
       content: '';
       position: absolute;
       width: 6px;
-      background-color: var(--linkColor);
+      background-color: var(--darkColor);
       top: 0;
       bottom: 0;
       left: 50%;
@@ -133,8 +151,8 @@
       width: 25px;
       height: 25px;
       right: -17px;
-      background-color: var(--linkColor);
-      border: 4px solid var(--boderColor);
+      background-color: var(--darkColor);
+      border: 4px solid var(--darkColor);
       top: 15px;
       border-radius: 50%;
       z-index: 1;
@@ -159,9 +177,9 @@
       width: 0;
       z-index: 1;
       right: 30px;
-      border: medium solid var(--boderColor);
+      border: medium solid var(--darkColor);
       border-width: 10px 0 10px 10px;
-      border-color: transparent transparent transparent var(--boderColor);
+      border-color: transparent transparent transparent var(--darkColor);
       ;
     }
 
@@ -174,9 +192,9 @@
       width: 0;
       z-index: 1;
       left: 30px;
-      border: medium solid var(--boderColor);
+      border: medium solid var(--darkColor);
       border-width: 10px 10px 10px 0;
-      border-color: transparent var(--boderColor) transparent transparent;
+      border-color: transparent var(--darkColor) transparent transparent;
     }
 
     /* Fix the circle for containers on the right side */
@@ -187,7 +205,7 @@
     /* The actual content */
     .content {
       padding: 20px 30px;
-      background-color: var(--backgroundColor1);
+      background-color: var(--darkColor);
       position: relative;
       border-radius: 6px;
     }
@@ -210,9 +228,9 @@
       /* Make sure that all arrows are pointing leftwards */
       .container::before {
         left: 60px;
-        border: medium solid var(--boderColor);
+        border: medium solid var(--darkColor);
         border-width: 10px 10px 10px 0;
-        border-color: transparent var(--boderColor) transparent transparent;
+        border-color: transparent var(--darkColor) transparent transparent;
       }
 
       /* Make sure all circles are at the same spot */
@@ -230,11 +248,11 @@
     /* ------------------------------------------------------------------------------------------------------------- */
     /* Gallery Starts Here */
     div.gallery {
-      border: 0px solid var(--boderColor);
+      border: 0px solid var(--darkColor);
     }
 
     div.gallery:hover {
-      border: 0px solid var(--boderColor);
+      border: 0px solid var(--darkColor);
     }
 
     div.gallery img {
