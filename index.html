@@ -143,7 +143,7 @@
       font-size: large;
     }
 
-    /* Container
+    Container
     .container {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -165,9 +165,26 @@
       display: flex;
       flex-direction: column;
       justify-content: space-between;
-    } */
+    }
 
     /* Tablet Styles */
+
+        @media (max-width: 10000px) {
+      .container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+      }
+
+      h1 {
+        font-size: 18px;
+        letter-spacing: .3em;
+      }
+
+      img {
+        margin: 20px auto 40px;
+        max-width: 20%;
+      }
+    }
     @media (max-width: 1024px) {
       .container {
         grid-template-columns: repeat(2, 1fr);
@@ -181,6 +198,7 @@
 
       img {
         margin: 20px auto 40px;
+        max-width: 20%;
       }
     }
 
@@ -228,7 +246,7 @@
       .main {
         padding: 10px;
         align-items: flex-start;
-        padding-top: 30px;
+        /* padding-top: 30px; */
       }
 
       .container {
@@ -256,6 +274,7 @@
       img {
         margin: 10px auto 20px;
         padding: 5px;
+        max-width: 50%x;
       }
 
       .container div {
@@ -286,7 +305,8 @@
       }
 
       img {
-        margin: 15px auto 30px;
+        margin: 40px auto 80px;
+        max-width: 60%;
       }
 
       .container div {
@@ -303,7 +323,7 @@
       <div class="container">
         <div>
           <div>
-            <img src="assets/img/logo/WhiteLogo.png" alt="SAIF" style="width:20%;">
+            <img src="assets/img/logo/WhiteLogo.png" alt="SAIF" style="width:100%;">
             <h1>ASSALAMU ALAIKUM</h1>
           </div>
           <a href="/about/"><button class="button button1">ReadMe</button></a>
