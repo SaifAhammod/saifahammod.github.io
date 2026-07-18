@@ -15,7 +15,7 @@ const globalTexts = {
     //Column 2
     footerCol2Title: "Important Link",
     //Column 3
-    footerCol3Title: "MY PLATFORMS",
+    footerCol3Title: "PLATFORMS",
     footerTag1: "CODATRON.COM",
     footerTag2: "CREATOR Lab",
     footerTag3: "AI & ROBOTICS COMMUNITY BANGLADESH",
