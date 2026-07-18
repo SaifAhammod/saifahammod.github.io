@@ -29,7 +29,7 @@ hr{
 
     a {
       text-decoration: none;
-      color: var(--linkColor);
+      color: var(--lightColor);
       font-weight: bold;
     }
 
