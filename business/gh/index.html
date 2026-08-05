@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+
+<head>
+  <title>Green Enterprise</title>
+  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+    /* body  {
+    background-image: url("Images/bg.jpg") ;
+    background-repeat: no-repeat;
+    background-attachment:scroll;
+  
+  }
+  div.navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #021526;
+    margin-bottom: 50px;
+  }
+  div.navbarElement{
+    float: left;
+  } 
+  
+  div.navbarElement a {
+    display: block;
+    color: #E2E2B6;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    
+  }
+  div.navbarElement a:hover {
+    background-color: #522258;
+  }
+
+  .note {
+    background-color: #021526;
+    border-left: 6px solid #021526;
+    margin-bottom: 10px;
+    padding: 10px 10px;
+    color: #E2E2B6;
+    opacity: 90%;
+    margin: 5px 2px;
+}
+
+.con {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  justify-content: left;
+}
+
+.icon {
+  position: relative;
+  color: #E2E2B6;
+  width: 50px;
+  height: 50px;
+  font-size: 15px;
+  text-align: center;
+  margin: 1rem;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon::after,
+.icon::before {
+  content: " ";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  border: 1px solid #E2E2B6;
+  opacity: 0;
+  transition: 0.3s;
+}
+
+.icon:hover::after {
+  opacity: 1;
+  transform: translate(-50%, -50%) scale(1.2) rotate(25deg);
+
+}
+
+.icon:hover::before {
+  opacity: 1;
+  transform: translate(-50%, -50%) scale(1.2) rotate(45deg);
+
+}
+a:link, a:visited {
+  background-color: #03346E;
+  color: #E2E2B6;
+  padding: 5px 8px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+a:hover, a:active {
+  background-color: #522258;
+} */
+  </style>
+</head>
+
+<body>
+  <!-- <div class="navbar">
+        <div class="navbarElement" style="font-family:Arial, Helvetica, sans-serif;"><a class="active" href="">Saif Ahammod Khan</a></div>
+        <div class="navbarElement" style="font-family:Arial, Helvetica, sans-serif;"><a class="active" href="">Codatron</a></div>
+        <div class="navbarElement" style="float:right"><a class="active" href="https://saifahammod.github.io">My Website</a></div>
+    </div> -->
+
+  <!-- Navbar -->
+  <div class="navbar">
+    <div style="display:flex;align-items:center;gap:10px;">
+      <button class="sidenav-toggle" onclick="toggleSidenav()" title="Toggle Sections Menu">☰</button>
+      <a href="#">Green Enterprise</a>
+    </div>
+    <div style="text-align: right;">
+      <p>Please call this number, to place your order <br>and  inquire about the discounted price<br> <strong>Phone: +880 1783 226077</strong></p>
+      <!-- <button class="toggle-mode">🌓</button> -->
+    </div>
+  </div>
+
+  <!-- Side Navbar -->
+  <div class="sidenav" id="sidenav">
+    <div class="sidenav-header">
+      <span>📂 Products</span>
+      <button class="sidenav-close" onclick="toggleSidenav()">✕</button>
+    </div>
+    <nav>
+      <a href="#cement">🧱 CEMENT</a>
+      <a href="#rod">🧲 ROD</a>
+ 
+    </nav>
+  </div>
+  <div class="sidenav-overlay" id="sidenav-overlay" onclick="toggleSidenav()"></div>
+
+  <!-- <div class="note">
+    <p onclick="toggleSection(this)">Network ⬇</p>
+    <div class="con">
+      <a href="https://www.youtube.com/">
+        <div class="icon"><img src="Tab Icon/Network/youtube.png" alt="Youtube"></div>
+        <h4>Youtube</h4>
+      </a>
+      <a href="https://www.facebook.com/">
+        <div class="icon"><img src="Tab Icon/Network/facebook.png" alt="Facebook"></div>
+        <h4>Facebook</h4>
+      </a>
+    </div>
+  </div> -->
+
+
+
+  <!-- Cement Started -->
+  <div class="note" id="cement">
+    <p><strong>Cement ⬇</strong></p>
+    
+    <div class="con">
+
+
+      <a href="#">
+        <div class="icon">
+          <img src="Product/cement/shah_sp.jpg" alt="OpenAI" width="300px" height="400px">
+        </div>
+        <h4>Shah Cement (Special)</h4>
+      </a>
+
+      
+    </div>
+    <h3 style="text-align: center; color:gold;">অর্ডার করতে এবং ডিসকাউন্ট মূল্য সম্পর্কে জানতে অনুগ্রহ করে এই নম্বরে (+৮৮০ ১৭৮৩ ২২৬০৭৭) কল করুন।</h3>
+  </div>
+  
+  <!-- Cement Ends -->
+
+  <!-- Rod Started -->
+  <div class="note" id="rod">
+    <p><strong>Cement ⬇</strong></p>
+    
+    <div class="con">
+
+
+      <a href="#">
+        <div class="icon">
+          <img src="Product/rod/zsrm8.png" alt="8">
+        </div>
+        <h4>ZSRM(8mm)</h4>
+      </a>
+       <a href="#">
+        <div class="icon">
+          <img src="Product/rod/zsrm8.png" alt="10" >
+        </div>
+        <h4>ZSRM(8 mm)</h4>
+      </a>
+       <a href="#">
+        <div class="icon">
+          <img src="Product/rod/zsrm8.png" alt="12">
+        </div>
+        <h4>ZSRM (12 mm)</h4>
+      </a>
+       <a href="#">
+        <div class="icon">
+          <img src="Product/rod/zsrm8.png" alt="16">
+        </div>
+        <h4>ZSRM (16 mm)</h4>
+      </a>
+       <a href="#">
+        <div class="icon">
+          <img src="Product/rod/zsrm8.png" alt="20">
+        </div>
+        <h4>ZSRM (20 mm)</h4>
+      </a>
+
+      
+    </div>
+    <h3 style="text-align: center; color:gold;">অর্ডার করতে এবং ডিসকাউন্ট মূল্য সম্পর্কে জানতে অনুগ্রহ করে এই নম্বরে (+৮৮০ ১৭৮৩ ২২৬০৭৭) কল করুন।</h3>
+  </div>
+  
+  <!-- Rod Ends -->
+
+  <script>
+    // Side nav toggle
+    function toggleSidenav() {
+      const nav = document.getElementById('sidenav');
+      const overlay = document.getElementById('sidenav-overlay');
+      nav.classList.toggle('open');
+      overlay.classList.toggle('active');
+    }
+
+    // Close sidenav on link click (smooth scroll)
+    document.querySelectorAll('.sidenav a').forEach(link => {
+      link.addEventListener('click', () => {
+        document.getElementById('sidenav').classList.remove('open');
+        document.getElementById('sidenav-overlay').classList.remove('active');
+      });
+    });
+
+    // Collapse/expand sections
+    function toggleSection(el) {
+      el.parentElement.classList.toggle("collapsed");
+      el.innerHTML = el.parentElement.classList.contains("collapsed")
+        ? el.innerText.replace("⬇", "⬆")
+        : el.innerText.replace("⬆", "⬇");
+    }
+
+    // Dark/light mode toggle
+    document.querySelector(".toggle-mode").addEventListener("click", () => {
+      document.body.classList.toggle("light");
+    });
+  </script>
+</body>
+
+</html>
